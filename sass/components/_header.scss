@@ -1,4 +1,34 @@
-header {
+.header {
    height: 90vh;
    background-image: url('../../images/bgs/heading-banner.jpg');
+   background-size: cover;
+   color: $primary-color;
+   position: relative;
+
+   &__text {
+      height: 20rem;
+      position: absolute;
+      top: 50%;
+      right: 2rem;
+      transform: translate(0, -2rem);
+      text-align: left;
+      
+      &-box {
+         text-transform: uppercase;
+         
+         &_row-1 {
+            font-size: 2.2rem;
+         }
+         
+         &_row-2 {
+            letter-spacing: 1.2rem;
+            font-size: 1.4rem;
+         }
+      }
+      
+      &_nav ul {
+         display: flex;
+         font-size: 1.6rem;
+      }
+   }
 }

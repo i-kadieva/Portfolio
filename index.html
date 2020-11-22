@@ -16,7 +16,7 @@
 <body>
 	<div class="navigation">
 		<div class="navigation__left">
-			<div class="navigation__logo mx-3 my-1"><img src="./images/MonogramBlue.png" class="navigation__logo_image" />
+			<div class="navigation__logo mx-3"><img src="./images/MonogramBlue.png" class="navigation__logo_image" />
 			</div>
 			<form class="navigation__toggle-device">
 				<div class="navigation__toggle-device_desktop mr-1 pr-1" data-tip-text='desktop mode'>
@@ -45,24 +45,26 @@
 		</div>
 		<div class="navigation__toggle-buttons mr-3">
 			<input type="checkbox" class="navigation__toggle-mode" id="toggle-mode" />
-			<label for="toggle-mode"></label>
+			<label for="toggle-mode">toggle mode</label>
 			<input type="checkbox" class="navigation__toggle-menu" id="togle-menu" />
-			<label for="toggle-menu">&nbsp;</label>
+			<label for="toggle-menu"><span class="navigation__icon">&nbsp;</span></label>
 		</div>
 	</div>
-	<header>
-		<div class="header__text-box">
-			<div class="header__text-box_row-1">Irena Kadieva</div>
-			<div class="header__text-box_row-2">Front-end develoler</div>
+	<header class="header">
+		<div class="header__text">
+			<div class="header__text-box mb-2">
+				<div class="header__text-box_row-1">Irena Kadieva</div>
+				<div class="header__text-box_row-2">Front-end developer</div>
+			</div>
+			<nav class="header__text_nav">
+				<ul class="main-navigation">
+					<li class="mr-2"><a href="#about">About</a></li>
+					<li class="mr-2"><a href="#projects">My projects</a></li>
+					<li><a href="#contacts">Contact me</a></li>
+				</ul>
+			</nav>
+			<a href="#projects" class="header__sctoll-btn"></a>
 		</div>
-		<nav>
-			<ul class="main-navigation">
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">My projects</a></li>
-				<li><a href="#contacts">Contact me</a></li>
-			</ul>
-		</nav>
-		<a href="#projects" class="header__sctoll-btn"></a>
 	</header>
 	<main>
 		<section id="projects" class="section__projects">

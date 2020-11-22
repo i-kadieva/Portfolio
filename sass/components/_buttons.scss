@@ -1,3 +1,4 @@
+input[type="checkbox"],
 input[type="radio"] {
    visibility: hidden;
    width: 0;
@@ -12,7 +13,15 @@ svg {
    fill: $primary-color;
 }
 
+.navigation__icon {
+   color: $secondary-font-color;
+}
+
 .navigation__toggle-device_desktop {
    border-right: 2px solid $primary-color;
+}
+
+.navigation__toggle-menu {
+   background-color: $tertiary-color;
 }
 

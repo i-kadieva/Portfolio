@@ -301,10 +301,12 @@
   margin: 4rem;
 }
 
+input[type=checkbox],
 input[type=radio] {
   visibility: hidden;
   width: 0;
 }
+input[type=checkbox]:checked + label > svg,
 input[type=radio]:checked + label > svg {
   fill: #f7941d;
 }
@@ -314,13 +316,46 @@ svg {
   fill: #002a38;
 }
 
+.navigation__icon {
+  color: #ffffff;
+}
+
 .navigation__toggle-device_desktop {
   border-right: 2px solid #002a38;
 }
 
-header {
+.navigation__toggle-menu {
+  background-color: #900019;
+}
+
+.header {
   height: 90vh;
   background-image: url("../../images/bgs/heading-banner.jpg");
+  background-size: cover;
+  color: #002a38;
+  position: relative;
+}
+.header__text {
+  height: 20rem;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translate(0, -2rem);
+  text-align: left;
+}
+.header__text-box {
+  text-transform: uppercase;
+}
+.header__text-box_row-1 {
+  font-size: 2.2rem;
+}
+.header__text-box_row-2 {
+  letter-spacing: 1.2rem;
+  font-size: 1.4rem;
+}
+.header__text_nav ul {
+  display: flex;
+  font-size: 1.6rem;
 }
 
 .navigation {
@@ -334,7 +369,7 @@ header {
   align-items: center;
 }
 .navigation__left .navigation__logo_image {
-  height: 8vh;
+  height: 10vh;
 }
 .navigation__left .navigation__toggle-device {
   display: flex;
@@ -347,8 +382,17 @@ header {
 }
 
 body {
-  font-family: "Roboto" sans-serif;
+  font-family: Roboto sans-serif;
   font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #434343;
+}
+
+li {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=style.css.map */
