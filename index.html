@@ -15,22 +15,35 @@
 
 <body>
 	<div class="navigation">
-		<div class="navigation__logo"><img src="./images/MonogramBlue.png" class="navigation__logo_image" /></div>
-		<div class="navigation__toggle-device">
-			<div class="navigation__toggle-device_desctop">
-				<input type="radio" id="toggle-desctop" />
-				<label for="toggle-desctop" class="navigation__toggle-device_label">
-					<img src="./images/icons/" class="navigation__toggle-device_image" />
-				</label>
+		<div class="navigation__left">
+			<div class="navigation__logo mx-3 my-1"><img src="./images/MonogramBlue.png" class="navigation__logo_image" />
 			</div>
-			<div class="navigation__toggle-device_mobile">
-				<input type="radio" id="toggle-mobile" />
-				<label for="toggle-mobile" class="navigation__toggle-device_label">
-					<img src="./images/icons/" class="navigation__toggle-device_image" />
-				</label>
-			</div>
+			<form class="navigation__toggle-device">
+				<div class="navigation__toggle-device_desktop mr-1 pr-1" data-tip-text='desktop mode'>
+					<input type="radio" name="toggle-device" id="toggle-desktop" value="desktop" checked/>
+					<label for="toggle-desktop" class="navigation__toggle-device_label">
+						<svg viewBox="0 0 128 128">
+							<path class="cls-1"
+								d="M119.93405,7.625H8.06595a5.646,5.646,0,0,0-5.55912,4.70525V93.53014a4.51389,4.51389,0,0,0,4.53957,4.3H53.68847l-.09043,3.6052a4.06956,4.06956,0,0,1-1.2809,2.7904l-5.45487,5.119a5.12215,5.12215,0,0,1-3.50509,1.38708h0A6.10922,6.10922,0,0,0,37.248,116.841v3.534H90.752v-3.534a6.10922,6.10922,0,0,0-6.10922-6.10922h0a5.12216,5.12216,0,0,1-3.50509-1.38708l-5.45487-5.119a4.06956,4.06956,0,0,1-1.2809-2.7904l-.09043-3.6052h46.64208a4.51389,4.51389,0,0,0,4.53957-4.3V12.33025A5.646,5.646,0,0,0,119.93405,7.625Zm-4.537,71.92959H12.603V17.74408H115.397Z">
+							</path>
+						</svg>
+					</label>
+				</div>
+				<div class="navigation__toggle-device_mobile">
+					<input type="radio" name="toggle-device" id="toggle-mobile" value="mobile" />
+					<label for="toggle-mobile" class="navigation__toggle-device_label">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+							<g>
+								<path
+									d="M709.8,10H290.2C252.4,10,222,40.5,222,78.1v843.6c0,37.7,30.5,68.3,68.2,68.3h419.7c37.7,0,68.2-30.5,68.2-68.3V78.1C778,40.5,747.5,10,709.8,10z M489.8,962.2c-18.9,0-34.1-15.3-34.1-34.1s15.3-34.1,34.1-34.1c18.7,0,34,15.4,34,34.1C523.7,947,508.5,962.2,489.8,962.2z M738.9,864.3H261V54.7h477.9V864.3z" />
+							</g>
+						</svg>
+					</label>
+				</div>
+			</form>
 		</div>
-		<div class="navigation__toggle-buttons">
+		<div class="navigation__toggle-buttons mr-3">
 			<input type="checkbox" class="navigation__toggle-mode" id="toggle-mode" />
 			<label for="toggle-mode"></label>
 			<input type="checkbox" class="navigation__toggle-menu" id="togle-menu" />
@@ -124,7 +137,9 @@
 		<section id="about" class="section__about">
 			<h2 class="section_about_heading">About</h2>
 			<p class="section__about_text">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem facilis voluptates enim ullam sunt, laborum alias nemo, eveniet inventore dolorum commodi molestiae nisi eos, deleniti numquam! Placeat, aut! Dolore?
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem facilis voluptates enim ullam sunt,
+				laborum alias nemo, eveniet inventore dolorum commodi molestiae nisi eos, deleniti numquam! Placeat, aut!
+				Dolore?
 			</p>
 		</section>
 		<section class="section__contacts_image"></section>
@@ -154,9 +169,12 @@
 				</ul>
 				<ul class="footer__social-media">
 					<li class="media-item">
-						<a href="#" class="media-item_link"><img src="./images/icons/facebook.png" class="footer__media_image" /></a>
-						<a href="#" class="media-item_link"><img src="./images/icons/linkedin.png" class="footer__media_image" /></a>
-						<a href="#" class="media-item_link"><img src="./images/icons//instagram.png" class="footer__media_image" /></a>
+						<a href="#" class="media-item_link"><img src="./images/icons/facebook.png"
+								class="footer__media_image" /></a>
+						<a href="#" class="media-item_link"><img src="./images/icons/linkedin.png"
+								class="footer__media_image" /></a>
+						<a href="#" class="media-item_link"><img src="./images/icons//instagram.png"
+								class="footer__media_image" /></a>
 					</li>
 				</ul>
 			</nav>

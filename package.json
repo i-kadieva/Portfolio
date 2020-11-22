@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev" : "sass --watch sass/style.scss css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://gitlab.com/i_kadieva/portfolio/issues"
   },
-  "homepage": "https://gitlab.com/i_kadieva/portfolio#readme"
+  "homepage": "https://gitlab.com/i_kadieva/portfolio#readme",
+  "dependencies": {
+    "sass": "^1.29.0"
+  }
 }

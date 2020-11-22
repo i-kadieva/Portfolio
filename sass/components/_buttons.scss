@@ -1,0 +1,18 @@
+input[type="radio"] {
+   visibility: hidden;
+   width: 0;
+
+   &:checked+label>svg {
+      fill: $secondary-color;
+   }
+}
+
+svg {
+   width: $navigation-items-height / 2;
+   fill: $primary-color;
+}
+
+.navigation__toggle-device_desktop {
+   border-right: 2px solid $primary-color;
+}
+
