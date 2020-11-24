@@ -1,0 +1,16 @@
+section {
+   color: $main-font-color;
+}
+
+.section__heading {
+   font-size: 2rem;
+   font-weight: 700;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 1.2rem;
+}
+
+.section__projects_details {
+   display: flex;
+   justify-content: center;
+}

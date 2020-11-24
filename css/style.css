@@ -301,6 +301,65 @@
   margin: 4rem;
 }
 
+.ml-5 {
+  margin-left: 5rem;
+}
+
+.pl-5 {
+  padding-left: 5rem;
+}
+
+.mr-5 {
+  margin-right: 5rem;
+}
+
+.pr-5 {
+  padding-right: 5rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.pt-5 {
+  padding-top: 5rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.pb-5 {
+  padding-bottom: 5rem;
+}
+
+.px-5 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-5 {
+  padding: 5rem;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.mx-5 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.my-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
 input[type=checkbox],
 input[type=radio] {
   visibility: hidden;
@@ -333,7 +392,7 @@ svg {
   background-image: url("../../images/bgs/heading-banner.jpg");
   background-size: cover;
   color: #002a38;
-  position: relative;
+  position: sticky;
 }
 .header__text {
   height: 20rem;
@@ -348,14 +407,30 @@ svg {
 }
 .header__text-box_row-1 {
   font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1.7rem;
 }
 .header__text-box_row-2 {
   letter-spacing: 1.2rem;
   font-size: 1.4rem;
 }
+.header__text_nav {
+  display: inline-block;
+  position: relative;
+}
 .header__text_nav ul {
   display: flex;
   font-size: 1.6rem;
+}
+.header__text_nav .header__scroll-btn {
+  display: block;
+  position: absolute;
+  bottom: -6rem;
+  left: 11rem;
+}
+.header__text_nav .header__scroll-btn svg {
+  fill: #434343;
+  height: 4rem;
 }
 
 .navigation {
@@ -375,6 +450,60 @@ svg {
   display: flex;
 }
 
+section {
+  color: #434343;
+}
+
+.section__heading {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2rem;
+}
+
+.section__projects_details {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: calc((100% - 20rem) / 3);
+}
+.card__side-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card__side-one .card__header {
+  position: relative;
+}
+.card__side-one .card__header .card__image {
+  height: 10rem;
+  border: 1px solid blue;
+}
+.card__side-one .card__header .card__heading {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  position: absolute;
+  top: 7rem;
+  left: 4.7rem;
+}
+.card__side-one .card__technologies .card__technologies_heading {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.card__side-one .card__technologies .card__technologies_list {
+  display: flex;
+}
+
+.tech_icon {
+  height: 2rem;
+  width: 2rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -384,6 +513,7 @@ svg {
 body {
   font-family: Roboto sans-serif;
   font-size: 1rem;
+  line-height: 1.4rem;
 }
 
 a {

@@ -11,7 +11,8 @@ $spaceList: (
    1: ('l': 'left', 'r': 'right', 't': 'top', 'b': 'bottom'),
    2: ('l': 'left', 'r': 'right', 't': 'top', 'b': 'bottom'),
    3: ('l': 'left', 'r': 'right', 't': 'top', 'b': 'bottom'),
-   4: ('l': 'left', 'r': 'right', 't': 'top', 'b': 'bottom')
+   4: ('l': 'left', 'r': 'right', 't': 'top', 'b': 'bottom'),
+   5: ('l': 'left', 'r': 'right', 't': 'top', 'b': 'bottom')
 );
 
 @each $space, $directions in $spaceList {

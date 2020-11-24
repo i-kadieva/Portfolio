@@ -1,0 +1,35 @@
+.card {
+   width: $cardWidth;
+   
+   &__side-one {
+      @include centerColumn;
+      .card__header {
+         position: relative;
+
+         .card__image {
+            height: 10rem;
+            border: 1px solid blue;
+         }
+
+         .card__heading {
+            font-size: 1rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+            position: absolute;
+            top: 7rem;
+            left: 4.7rem;
+         }
+      }
+      
+      .card__technologies {
+         .card__technologies_heading {
+            font-size: 1rem;
+            text-transform: uppercase;
+         }
+         .card__technologies_list {
+            display: flex;
+         }
+      }
+   }
+}

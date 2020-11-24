@@ -20,7 +20,7 @@
 			</div>
 			<form class="navigation__toggle-device">
 				<div class="navigation__toggle-device_desktop mr-1 pr-1" data-tip-text='desktop mode'>
-					<input type="radio" name="toggle-device" id="toggle-desktop" value="desktop" checked/>
+					<input type="radio" name="toggle-device" id="toggle-desktop" value="desktop" checked />
 					<label for="toggle-desktop" class="navigation__toggle-device_label">
 						<svg viewBox="0 0 128 128">
 							<path class="cls-1"
@@ -52,35 +52,86 @@
 	</div>
 	<header class="header">
 		<div class="header__text">
-			<div class="header__text-box mb-2">
-				<div class="header__text-box_row-1">Irena Kadieva</div>
+			<div class="header__text-box mb-4">
+				<div class="header__text-box_row-1 mb-1">Irena Kadieva</div>
 				<div class="header__text-box_row-2">Front-end developer</div>
 			</div>
 			<nav class="header__text_nav">
-				<ul class="main-navigation">
+				<ul class="main-navigation mb-1">
 					<li class="mr-2"><a href="#about">About</a></li>
 					<li class="mr-2"><a href="#projects">My projects</a></li>
 					<li><a href="#contacts">Contact me</a></li>
 				</ul>
+				<a href="#projects" class="header__scroll-btn">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+						<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+						<g>
+							<path
+								d="M500,763.8c-9.6,0-19.3-3.7-26.7-11L21,300.5c-14.7-14.7-14.7-38.6,0-53.3c14.7-14.7,38.6-14.7,53.3,0L500,672.8l425.6-425.6c14.7-14.7,38.6-14.7,53.3,0s14.7,38.6,0,53.3L526.6,752.8C519.3,760.1,509.7,763.8,500,763.8z" />
+						</g>
+					</svg>
+				</a>
 			</nav>
-			<a href="#projects" class="header__sctoll-btn"></a>
 		</div>
 	</header>
 	<main>
 		<section id="projects" class="section__projects">
-			<h2 class="section__projects_heading">My projects</h2>
-			<div class="cards">
+			<h2 class="section__heading my-4">My projects</h2>
+			<div class="section__projects_details">
 				<div class="card">
 					<div class="card__side-one">
-						<h4 class="card__heading">Giphy</h4>
-						<div class="card__image"></div>
-						<ul class="card__details">
-							<li class="card__list-item"></li>
-							<li class="card__list-item"></li>
-							<li class="card__list-item"></li>
-							<li class="card__list-item"></li>
-							<li class="card__list-item"></li>
+						<div class="card__header">
+							<div class="card__image"></div>
+							<h4 class="card__heading">Giphy</h4>
+						</div>
+						<ul class="card__details mt-2 px-2">
+							<li class="card__list-item">Display top trending gifs</li>
+							<li class="card__list-item">Upload and search for gifs</li>
+							<li class="card__list-item">Display gifs' info details</li>
+							<li class="card__list-item">Make gifs favorite or make a random gif favorite</li>
 						</ul>
+						<div class="card__technologies">
+							<p class="card__technologies_heading mt-2 mb-1">Used technologies:</p>
+							<ul class="card__technologies_list">
+								<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/html.png" />
+								</li>
+								<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/js.png" /></li>
+								<li class="card__list-item"><img class="tech_icon" src="./images/tech_icons/bootstrap.png" />
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card__side-two">
+						<div class="card__images">
+							<div class="card__image"></div>
+							<div class="card__image"></div>
+							<div class="card__image"></div>
+						</div>
+						<a href="#" class="card__link">Go to project</a>
+					</div>
+				</div>
+				<div class="card mx-5">
+					<div class="card__side-one">
+						<div class="card__header">
+							<div class="card__image"></div>
+							<h4 class="card__heading">Book library</h4>
+						</div>
+						<ul class="card__details mt-2 px-2">
+							<li class="card__list-item">Online book library</li>
+							<li class="card__list-item">Borrow books, write reviews, rate them</li>
+							<li class="card__list-item">Administration CRUD operations on all the books, reviews and users</li>
+							<li class="card__list-item">Ban a user, unlist/borrow/return a book</li>
+						</ul>
+						<div class="card__technologies">
+							<p class="card__technologies_heading mt-2 mb-1">Used technologies:</p>
+							<ul class="card__technologies_list">
+								<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/ts.png" /></li>
+								<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/angular.png" />
+								</li>
+								<li class="card__list-item"><img class="tech_icon" src="./images/tech_icons/nestjs.png" /></li>
+							</ul>
+						</div>
 					</div>
 					<div class="card__side-two">
 						<div class="card__images">
@@ -93,36 +144,29 @@
 				</div>
 				<div class="card">
 					<div class="card__side-one">
-						<h4 class="card__heading">Book library</h4>
-						<div class="card__image"></div>
-						<ul class="card__details">
-							<li class="card__list-item"></li>
-							<li class="card__list-item"></li>
-							<li class="card__list-item"></li>
-							<li class="card__list-item"></li>
-							<li class="card__list-item"></li>
-						</ul>
-					</div>
-					<div class="card__side-two">
-						<div class="card__images">
+						<div class="card__header">
 							<div class="card__image"></div>
-							<div class="card__image"></div>
-							<div class="card__image"></div>
+							<h4 class="card__heading">Multi lingo</h4>
 						</div>
-						<a href="#" class="card__link">Go to project</a>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card__side-one">
-						<h4 class="card__heading">Multi lingo</h4>
-						<div class="card__image"></div>
-						<ul class="card__details">
-							<li class="card__list-item"></li>
-							<li class="card__list-item"></li>
-							<li class="card__list-item"></li>
-							<li class="card__list-item"></li>
-							<li class="card__list-item"></li>
+						<ul class="card__details mt-2 px-2">
+							<li class="card__list-item">Share or access various articles, translated into language in
+								accordance with user’s locale or personal choice</li>
+							<li class="card__list-item">Three type of access: users/contributors, editors and administrators
+							</li>
+							<li class="card__list-item">Every article’s edit is saved as a new version</li>
+							<li class="card__list-item">Editors correct translations</li>
+							<li class="card__list-item"> Administrators have full access to the system and serve as "master"
+								contributor or editor</li>
 						</ul>
+						<div class="card__technologies">
+							<p class="card__technologies_heading mt-2 mb-1">Used technologies:</p>
+							<ul class="card__technologies_list">
+								<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/ts.png" /></li>
+								<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/angular.png" />
+								</li>
+								<li class="card__list-item"><img class="tech_icon" src="./images/tech_icons/nestjs.png" /></li>
+							</ul>
+						</div>
 					</div>
 					<div class="card__side-two">
 						<div class="card__images">
@@ -135,9 +179,9 @@
 				</div>
 			</div>
 		</section>
-		<section class="section__about_image"></section>
+		<section class="section__about_image my-4"></section>
 		<section id="about" class="section__about">
-			<h2 class="section_about_heading">About</h2>
+			<h2 class="section__heading">About</h2>
 			<p class="section__about_text">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem facilis voluptates enim ullam sunt,
 				laborum alias nemo, eveniet inventore dolorum commodi molestiae nisi eos, deleniti numquam! Placeat, aut!
@@ -146,7 +190,7 @@
 		</section>
 		<section class="section__contacts_image"></section>
 		<section id="contacts" class="section__contacts">
-			<h2 class="section_contacts_heading">Contact me</h2>
+			<h2 class="section__heading">Contact me</h2>
 			<form action="post" class="form">
 				<label for="name" class="form_label">Name</label>
 				<input type="text" class="form-input" name="name" id="name" required>
