@@ -1,11 +1,15 @@
 .card {
    width: $cardWidth;
+   border-radius: 5px;
+   background-color: $white-color;
+   box-shadow: .5rem .9rem 1rem rgba($black-color, .5);
    
    &__side-one {
-      @include centerColumn;
+      @include spaceBetweenColumn;
+      height: 35rem;
       .card__header {
          position: relative;
-
+         
          .card__image {
             height: 10rem;
             border: 1px solid blue;
@@ -30,6 +34,65 @@
          .card__technologies_list {
             display: flex;
          }
+      }
+   }
+
+   &__side-two {
+      height: 35rem;
+
+      .card__images {
+         position: relative;
+         
+         .card__image_one {
+            position: absolute;
+            top: 2rem;
+            left: 3.8rem;
+
+            img {
+               margin: 10px;
+            }
+
+            &:hover {
+               @include imageHover();
+            }
+         }
+
+         .card__image_two {
+            position: absolute;
+            top: 5rem;
+            left: 8.5rem;
+
+            img {
+               margin: 10px;
+            }
+
+            &:hover {
+               @include imageHover();
+            }
+         }
+
+         .card__image_three {
+            position: absolute;
+            top: 7rem;
+            left: 2.5rem;
+
+            img {
+               margin: 10px;
+            }
+            
+            &:hover {
+               @include imageHover();
+            }
+         }
+
+      }
+
+      .side-two_image {
+         height: 7rem;
+      }
+
+      .card__link {
+
       }
    }
 }

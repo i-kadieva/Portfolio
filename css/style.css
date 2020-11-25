@@ -469,11 +469,15 @@ section {
 
 .card {
   width: calc((100% - 20rem) / 3);
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0.5rem 0.9rem 1rem rgba(0, 0, 0, 0.5);
 }
 .card__side-one {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  height: 35rem;
 }
 .card__side-one .card__header {
   position: relative;
@@ -498,7 +502,57 @@ section {
 .card__side-one .card__technologies .card__technologies_list {
   display: flex;
 }
-
+.card__side-two {
+  height: 35rem;
+}
+.card__side-two .card__images {
+  position: relative;
+}
+.card__side-two .card__images .card__image_one {
+  position: absolute;
+  top: 2rem;
+  left: 3.8rem;
+}
+.card__side-two .card__images .card__image_one img {
+  margin: 10px;
+}
+.card__side-two .card__images .card__image_one:hover {
+  outline: 0.5rem solid #002a38;
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.card__side-two .card__images .card__image_two {
+  position: absolute;
+  top: 5rem;
+  left: 8.5rem;
+}
+.card__side-two .card__images .card__image_two img {
+  margin: 10px;
+}
+.card__side-two .card__images .card__image_two:hover {
+  outline: 0.5rem solid #002a38;
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.card__side-two .card__images .card__image_three {
+  position: absolute;
+  top: 7rem;
+  left: 2.5rem;
+}
+.card__side-two .card__images .card__image_three img {
+  margin: 10px;
+}
+.card__side-two .card__images .card__image_three:hover {
+  outline: 0.5rem solid #002a38;
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.card__side-two .side-two_image {
+  height: 7rem;
+}
 .tech_icon {
   height: 2rem;
   width: 2rem;
@@ -514,6 +568,7 @@ body {
   font-family: Roboto sans-serif;
   font-size: 1rem;
   line-height: 1.4rem;
+  background-color: #f7f7f7;
 }
 
 a {
