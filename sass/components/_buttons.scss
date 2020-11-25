@@ -21,7 +21,21 @@ svg {
    border-right: 2px solid $primary-color;
 }
 
-.navigation__toggle-menu {
+.navigation__toggle-menu label {
    background-color: $tertiary-color;
+}
+
+.card__link {
+   color: $main-font-color;
+   border-radius: 6rem;
+   padding: .5rem 3rem;
+   text-transform: uppercase;
+   font-size: .8rem;
+   background-color: $white-color;
+   display: inline-block;
+   position: relative;
+   top: 25rem;
+   left: 50%;
+   transform: translateX(-6rem);
 }
 

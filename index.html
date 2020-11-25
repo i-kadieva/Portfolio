@@ -44,8 +44,8 @@
 			</form>
 		</div>
 		<div class="navigation__toggle-buttons mr-3">
-			<input type="checkbox" class="navigation__toggle-mode" id="toggle-mode" />
-			<label for="toggle-mode">toggle mode</label>
+			<!-- <input type="checkbox" class="navigation__toggle-mode" id="toggle-mode" />
+			<label for="toggle-mode">toggle mode</label> -->
 			<input type="checkbox" class="navigation__toggle-menu" id="togle-menu" />
 			<label for="toggle-menu"><span class="navigation__icon">&nbsp;</span></label>
 		</div>
@@ -80,7 +80,7 @@
 			<h2 class="section__heading my-4">My projects</h2>
 			<div class="section__projects_details">
 				<div class="card">
-					<div class="card__side-one">
+					<div class="card__side_front">
 						<div class="card__header">
 							<div class="card__image"></div>
 							<h4 class="card__heading">Giphy</h4>
@@ -102,17 +102,17 @@
 							</ul>
 						</div>
 					</div>
-					<div class="card__side-two">
+					<div class="card__side_back card__side_back--one">
 						<div class="card__images">
-							<div class="card__image_one"><img class="side-two_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
-							<div class="card__image_two"><img class="side-two_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
-							<div class="card__image_three"><img class="side-two_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
+							<div class="card__image_one"><img class="side-back_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
+							<div class="card__image_two"><img class="side-back_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
+							<div class="card__image_three"><img class="side-back_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
 						</div>
 						<a href="#" class="card__link">Go to project</a>
 					</div>
 				</div>
 				<div class="card mx-5">
-					<div class="card__side-one">
+					<div class="card__side_front">
 						<div class="card__header">
 							<div class="card__image"></div>
 							<h4 class="card__heading">Book library</h4>
@@ -133,17 +133,17 @@
 							</ul>
 						</div>
 					</div>
-					<div class="card__side-two">
+					<div class="card__side_back card__side_back--two">
 						<div class="card__images">
-							<div class="card__image_one"><img class="side-two_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
-							<div class="card__image_two"><img class="side-two_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
-							<div class="card__image_three"><img class="side-two_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
+							<div class="card__image_one"><img class="side-back_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
+							<div class="card__image_two"><img class="side-back_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
+							<div class="card__image_three"><img class="side-back_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
 						</div>
 						<a href="#" class="card__link">Go to project</a>
 					</div>
 				</div>
 				<div class="card">
-					<div class="card__side-one">
+					<div class="card__side_front">
 						<div class="card__header">
 							<div class="card__image"></div>
 							<h4 class="card__heading">Multi lingo</h4>
@@ -168,29 +168,27 @@
 							</ul>
 						</div>
 					</div>
-					<div class="card__side-two">
+					<div class="card__side_back card__side_back--three">
 						<div class="card__images">
-							<div class="card__image_one"><img class="side-two_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
-							<div class="card__image_two"><img class="side-two_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
-							<div class="card__image_three"><img class="side-two_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
+							<div class="card__image_one"><img class="side-back_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
+							<div class="card__image_two"><img class="side-back_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
+							<div class="card__image_three"><img class="side-back_image" src="./images/dreamstime_xxl_176267500.jpg" /></div>
 						</div>
 						<a href="#" class="card__link">Go to project</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section__about_image my-4"></section>
+		<section class="section__image_about section__image my-4"></section>
 		<section id="about" class="section__about">
-			<h2 class="section__heading">About</h2>
-			<p class="section__about_text">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem facilis voluptates enim ullam sunt,
-				laborum alias nemo, eveniet inventore dolorum commodi molestiae nisi eos, deleniti numquam! Placeat, aut!
-				Dolore?
+			<h2 class="section__heading my-4">About</h2>
+			<p class="section section__about section__about_text mx-5 px-5">
+				I am a passionate and energetic JavaScript developer since 2019. I am proactive, curios and always ready to learn. I have a broad professional experience in various spheres that giving me an opportunity to adapt quickly to new challenges.
 			</p>
 		</section>
-		<section class="section__contacts_image"></section>
+		<section class="section__contacts_image my-4"></section>
 		<section id="contacts" class="section__contacts">
-			<h2 class="section__heading">Contact me</h2>
+			<h2 class="section__heading my-4">Contact me</h2>
 			<form action="post" class="form">
 				<label for="name" class="form_label">Name</label>
 				<input type="text" class="form-input" name="name" id="name" required>
@@ -205,7 +203,7 @@
 		</section>
 	</main>
 	<footer>
-		<div class="footer">
+		<div class="footer mt-4">
 			<div class="footer_logo"><img src="./images/MonogramBlue.png" class="footer__logo_image" /></div>
 			<nav class="footer__navigation">
 				<ul class="footer__nav">

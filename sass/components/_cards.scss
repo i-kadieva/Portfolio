@@ -4,7 +4,7 @@
    background-color: $white-color;
    box-shadow: .5rem .9rem 1rem rgba($black-color, .5);
    
-   &__side-one {
+   &__side_front {
       @include spaceBetweenColumn;
       height: 35rem;
       .card__header {
@@ -37,15 +37,27 @@
       }
    }
 
-   &__side-two {
+   &__side_back {
       height: 35rem;
+
+      &--one {
+         background-image: linear-gradient(to right bottom, #118b94, #002a38);
+      }
+
+      &--two {
+         background-image: linear-gradient(to right bottom,#fab764, #DD5426);
+      }
+
+      &--three {
+         background-image: linear-gradient(to right bottom,#ff8566, #900019);
+      }
 
       .card__images {
          position: relative;
          
          .card__image_one {
             position: absolute;
-            top: 2rem;
+            top: 5rem;
             left: 3.8rem;
 
             img {
@@ -59,7 +71,7 @@
 
          .card__image_two {
             position: absolute;
-            top: 5rem;
+            top: 8rem;
             left: 8.5rem;
 
             img {
@@ -73,7 +85,7 @@
 
          .card__image_three {
             position: absolute;
-            top: 7rem;
+            top: 10rem;
             left: 2.5rem;
 
             img {
@@ -87,12 +99,8 @@
 
       }
 
-      .side-two_image {
+      .side-back_image {
          height: 7rem;
-      }
-
-      .card__link {
-
       }
    }
 }
