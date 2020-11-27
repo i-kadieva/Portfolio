@@ -1,15 +1,14 @@
 .header {
-   height: 90vh;
+   @include fixedBackground;
    background-image: url('../../images/bgs/heading-banner.jpg');
-   background-size: cover;
    color: $primary-color;
    position: sticky;
 
    &__text {
       height: 20rem;
       position: absolute;
-      top: 50%;
-      right: 2rem;
+      top: 45%;
+      right: 4rem;
       transform: translate(0, -2rem);
       text-align: left;
       

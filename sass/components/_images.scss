@@ -1,0 +1,98 @@
+.tech_icon {
+	height: 2rem;
+	width: 2rem;
+}
+
+.footer__media_image {
+		height: 2rem;
+}
+
+.section__image {
+	@include fixedBackground;
+
+	&_about {
+		background-image: url('../../images/bgs/section_about.jpg');
+		height: 20rem;
+	}
+
+	&_contacts {
+		background-image: url('../../images/bgs/section_contacts.jpg');
+		height: 20rem;
+	}
+}
+
+.card__image {
+	height: 15rem;
+}
+
+.card__images {
+	position: relative;
+	
+	.card__image_one {
+		position: absolute;
+		top: 7rem;
+		left: 1.8rem;
+
+		img {
+			@include compositionImage;
+		}
+
+		&:hover {
+			@include compositionImageHover();
+		}
+	}
+
+	.card__image_two {
+		position: absolute;
+		top: 11rem;
+		left: 7rem;
+
+		img {
+			@include compositionImage;
+		}
+
+		&:hover {
+			@include compositionImageHover();
+		}
+	}
+
+	.card__image_three {
+		position: absolute;
+		top: 14rem;
+		left: 3.5rem;
+
+		img {
+			@include compositionImage;
+		}
+		
+		&:hover {
+			@include compositionImageHover();
+		}
+	}
+}
+
+.side-back_image {
+	height: 7rem;
+}
+
+.card__one_image {
+	background-image: url('../../images/project_images/giphyMain.gif');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.card__two_image {
+	background-image: url('../../images/project_images/libraryMain.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.card__three_image {
+	background-image: url('../../images/project_images/multilingoMain.png');
+	background-size: cover;
+}
+
+.side-back_image {
+	width: 12rem;
+	height: 5rem;
+}

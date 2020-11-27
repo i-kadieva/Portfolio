@@ -30,7 +30,7 @@ svg {
 	border-radius: 6rem;
 	padding: .5rem 3rem;
 	text-transform: uppercase;
-	font-size: .8rem;
+	font-size: 1rem;
 	background-color: $white-color;
 	display: inline-block;
 	position: relative;
@@ -46,5 +46,9 @@ svg {
 	border: 1px solid $black-color;
 	padding: .5rem;
 	width: 30%;
+
+	&:hover {
+		opacity: .8;
+	}
 }
 

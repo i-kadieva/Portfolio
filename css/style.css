@@ -396,7 +396,7 @@ svg {
   border-radius: 6rem;
   padding: 0.5rem 3rem;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 1rem;
   background-color: #ffffff;
   display: inline-block;
   position: relative;
@@ -417,6 +417,25 @@ svg {
   padding: 0.5rem;
   width: 30%;
 }
+.form_button:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  background-color: #CC4A1E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo_image {
+  height: 3rem;
+}
+.footer__navigation {
+  display: flex;
+}
+.footer__navigation .nav_item-link {
+  color: #ffffff;
+}
 
 .form {
   width: 60%;
@@ -428,6 +447,7 @@ svg {
 .form_label span {
   color: #900019;
   margin-left: 0.3rem;
+  font-weight: 700;
 }
 .form_input {
   line-height: 1.3rem;
@@ -462,16 +482,17 @@ svg {
 
 .header {
   height: 90vh;
-  background-image: url("../../images/bgs/heading-banner.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../../images/bgs/heading-banner.jpg");
   color: #002a38;
   position: sticky;
 }
 .header__text {
   height: 20rem;
   position: absolute;
-  top: 50%;
-  right: 2rem;
+  top: 45%;
+  right: 4rem;
   transform: translate(0, -2rem);
   text-align: left;
 }
@@ -507,9 +528,14 @@ svg {
 }
 
 .navigation {
+  background-color: #f7f7f7;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 .navigation__left {
   display: flex;
@@ -557,18 +583,29 @@ svg {
 .card__side_front .card__header {
   position: relative;
 }
-.card__side_front .card__header .card__image {
-  height: 10rem;
-  border: 1px solid blue;
-}
 .card__side_front .card__header .card__heading {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1rem;
+  letter-spacing: 0.8rem;
   position: absolute;
-  top: 7rem;
-  left: 4.7rem;
+  bottom: 0.8rem;
+  right: 0.8rem;
+  color: #ffffff;
+  padding: 0.2rem 0.6rem;
+}
+.card__side_front .card__header .card__heading_one {
+  background-image: linear-gradient(to right bottom, rgba(17, 139, 148, 0.7), rgba(0, 42, 56, 0.7));
+}
+.card__side_front .card__header .card__heading_two {
+  background-image: linear-gradient(to right bottom, rgba(250, 183, 100, 0.7), rgba(221, 84, 38, 0.7));
+}
+.card__side_front .card__header .card__heading_three {
+  background-image: linear-gradient(to right bottom, rgba(255, 133, 102, 0.7), rgba(144, 0, 25, 0.7));
+}
+.card__side_front .card__details_list-item {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
 }
 .card__side_front .card__technologies .card__technologies_heading {
   font-size: 1rem;
@@ -589,58 +626,107 @@ svg {
 .card__side_back--three {
   background-image: linear-gradient(to right bottom, #ff8566, #900019);
 }
-.card__side_back .card__images {
-  position: relative;
-}
-.card__side_back .card__images .card__image_one {
-  position: absolute;
-  top: 5rem;
-  left: 3.8rem;
-}
-.card__side_back .card__images .card__image_one img {
-  margin: 10px;
-}
-.card__side_back .card__images .card__image_one:hover {
-  outline: 0.5rem solid #ffffff;
-  transform: scale(1.4) translateY(-0.5rem);
-  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
-  z-index: 99;
-}
-.card__side_back .card__images .card__image_two {
-  position: absolute;
-  top: 8rem;
-  left: 8.5rem;
-}
-.card__side_back .card__images .card__image_two img {
-  margin: 10px;
-}
-.card__side_back .card__images .card__image_two:hover {
-  outline: 0.5rem solid #ffffff;
-  transform: scale(1.4) translateY(-0.5rem);
-  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
-  z-index: 99;
-}
-.card__side_back .card__images .card__image_three {
-  position: absolute;
-  top: 10rem;
-  left: 2.5rem;
-}
-.card__side_back .card__images .card__image_three img {
-  margin: 10px;
-}
-.card__side_back .card__images .card__image_three:hover {
-  outline: 0.5rem solid #ffffff;
-  transform: scale(1.4) translateY(-0.5rem);
-  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
-  z-index: 99;
-}
-.card__side_back .side-back_image {
-  height: 7rem;
-}
 
 .tech_icon {
   height: 2rem;
   width: 2rem;
+}
+
+.footer__media_image {
+  height: 2rem;
+}
+
+.section__image {
+  height: 90vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section__image_about {
+  background-image: url("../../images/bgs/section_about.jpg");
+  height: 20rem;
+}
+.section__image_contacts {
+  background-image: url("../../images/bgs/section_contacts.jpg");
+  height: 20rem;
+}
+
+.card__image {
+  height: 15rem;
+}
+
+.card__images {
+  position: relative;
+}
+.card__images .card__image_one {
+  position: absolute;
+  top: 7rem;
+  left: 1.8rem;
+}
+.card__images .card__image_one img {
+  margin: 10px;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+.card__images .card__image_one:hover {
+  outline: 4px solid #ffffff;
+  transform: scale(1.4) translateY(-0.5rem);
+  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.card__images .card__image_two {
+  position: absolute;
+  top: 11rem;
+  left: 7rem;
+}
+.card__images .card__image_two img {
+  margin: 10px;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+.card__images .card__image_two:hover {
+  outline: 4px solid #ffffff;
+  transform: scale(1.4) translateY(-0.5rem);
+  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.card__images .card__image_three {
+  position: absolute;
+  top: 14rem;
+  left: 3.5rem;
+}
+.card__images .card__image_three img {
+  margin: 10px;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+.card__images .card__image_three:hover {
+  outline: 4px solid #ffffff;
+  transform: scale(1.4) translateY(-0.5rem);
+  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.side-back_image {
+  height: 7rem;
+}
+
+.card__one_image {
+  background-image: url("../../images/project_images/giphyMain.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card__two_image {
+  background-image: url("../../images/project_images/libraryMain.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card__three_image {
+  background-image: url("../../images/project_images/multilingoMain.png");
+  background-size: cover;
+}
+
+.side-back_image {
+  width: 12rem;
+  height: 5rem;
 }
 
 * {

@@ -10,19 +10,35 @@
 		.card__header {
 			position: relative;
 			
-			.card__image {
-				height: 10rem;
-				border: 1px solid blue;
-			}
-
 			.card__heading {
 				font-size: 1rem;
-				font-weight: 400;
+				font-weight: 600;
 				text-transform: uppercase;
-				letter-spacing: 1rem;
+				letter-spacing: .8rem;
 				position: absolute;
-				top: 7rem;
-				left: 4.7rem;
+				bottom: .8rem;
+				right: .8rem;
+				color: $secondary-font-color;
+				padding: .2rem .6rem;
+				
+				&_one {
+					background-image: linear-gradient(to right bottom,rgba(#118b94, .7), rgba(#002a38, .7));
+				}
+
+				&_two {
+					background-image: linear-gradient(to right bottom,rgba(#fab764, .7), rgba(#DD5426, .7));
+				}
+
+				&_three {
+					background-image: linear-gradient(to right bottom,rgba(#ff8566, .7), rgba(#900019, .7));
+				}
+			}
+		}
+
+		.card__details {
+			&_list-item {
+				font-size: .9rem;
+				line-height: 1.4rem;
 			}
 		}
 		
@@ -50,57 +66,6 @@
 
 		&--three {
 			background-image: linear-gradient(to right bottom,#ff8566, #900019);
-		}
-
-		.card__images {
-			position: relative;
-			
-			.card__image_one {
-				position: absolute;
-				top: 5rem;
-				left: 3.8rem;
-
-				img {
-					margin: 10px;
-				}
-
-				&:hover {
-					@include imageHover();
-				}
-			}
-
-			.card__image_two {
-				position: absolute;
-				top: 8rem;
-				left: 8.5rem;
-
-				img {
-					margin: 10px;
-				}
-
-				&:hover {
-					@include imageHover();
-				}
-			}
-
-			.card__image_three {
-				position: absolute;
-				top: 10rem;
-				left: 2.5rem;
-
-				img {
-					margin: 10px;
-				}
-				
-				&:hover {
-					@include imageHover();
-				}
-			}
-
-		}
-
-		.side-back_image {
-			height: 7rem;
 		}
 	}
 }
