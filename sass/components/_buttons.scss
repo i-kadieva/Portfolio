@@ -1,41 +1,50 @@
 input[type="checkbox"],
 input[type="radio"] {
-   visibility: hidden;
-   width: 0;
+	visibility: hidden;
+	width: 0;
 
-   &:checked+label>svg {
-      fill: $secondary-color;
-   }
+	&:checked+label>svg {
+		fill: $secondary-color;
+	}
 }
 
 svg {
-   width: $navigation-items-height / 2;
-   fill: $primary-color;
+	width: $navigation-items-height / 2;
+	fill: $primary-color;
 }
 
 .navigation__icon {
-   color: $secondary-font-color;
+	color: $secondary-font-color;
 }
 
 .navigation__toggle-device_desktop {
-   border-right: 2px solid $primary-color;
+	border-right: 2px solid $primary-color;
 }
 
 .navigation__toggle-menu label {
-   background-color: $tertiary-color;
+	background-color: $tertiary-color;
 }
 
 .card__link {
-   color: $main-font-color;
-   border-radius: 6rem;
-   padding: .5rem 3rem;
-   text-transform: uppercase;
-   font-size: .8rem;
-   background-color: $white-color;
-   display: inline-block;
-   position: relative;
-   top: 25rem;
-   left: 50%;
-   transform: translateX(-6rem);
+	color: $main-font-color;
+	border-radius: 6rem;
+	padding: .5rem 3rem;
+	text-transform: uppercase;
+	font-size: .8rem;
+	background-color: $white-color;
+	display: inline-block;
+	position: relative;
+	top: 25rem;
+	left: 50%;
+	transform: translateX(-6rem);
+}
+
+.form_button {
+	@include formText;
+	color: $white-color;
+	background-color: $black-color;
+	border: 1px solid $black-color;
+	padding: .5rem;
+	width: 30%;
 }
 

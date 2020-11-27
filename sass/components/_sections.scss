@@ -1,24 +1,24 @@
 .section {
-   color: $main-font-color;
-   
-   &__projects {
-      
-      &_details {
-         display: flex;
-         justify-content: center;
-      }
-   }
+	color: $main-font-color;
+	
+	&__projects {
+		
+		&_details {
+			display: flex;
+			justify-content: center;
+		}
+	}
 
-   &__about_text {
-      font-size: 1.5rem;
-      line-height: 2rem;
-   }
-   
-   &__heading {
-      font-size: 2rem;
-      font-weight: 700;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 1.2rem;
-   }
+	&__about_text {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+	
+	&__heading {
+		font-size: 2rem;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 1.2rem;
+	}
 }

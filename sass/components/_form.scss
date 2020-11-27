@@ -1,0 +1,33 @@
+.form {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	font-size: 1.3rem;
+	
+	&_label {
+		span {
+			color: $tertiary-color;
+			margin-left: .3rem;
+		}
+	}
+ 
+	&_input {
+		@include formText;
+
+		&:focus {
+			@include formText;
+			outline: none;
+		}
+	}
+
+	&_textarea {
+		@include formText;
+		
+		&:focus {
+			@include formText;
+			outline: none;
+		}
+	}
+ 
+}

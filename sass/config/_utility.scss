@@ -6,6 +6,10 @@
 	margin: auto 0;
 }
 
+.ml-auto {
+   margin-left: auto;
+}
+
 $spaceList: (
    0: ('l': 'left', 'r': 'right', 't': 'top', 'b': 'bottom'),
    1: ('l': 'left', 'r': 'right', 't': 'top', 'b': 'bottom'),

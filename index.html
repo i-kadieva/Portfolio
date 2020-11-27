@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" type="image/png" href="images/portfolio.png">
 
@@ -179,26 +180,26 @@
 				</div>
 			</div>
 		</section>
-		<section class="section__image_about section__image my-4"></section>
-		<section id="about" class="section__about">
+		<section class="section__image section__image_about my-4"></section>
+		<section id="about" class="section section__about">
 			<h2 class="section__heading my-4">About</h2>
 			<p class="section section__about section__about_text mx-5 px-5">
 				I am a passionate and energetic JavaScript developer since 2019. I am proactive, curios and always ready to learn. I have a broad professional experience in various spheres that giving me an opportunity to adapt quickly to new challenges.
 			</p>
 		</section>
-		<section class="section__contacts_image my-4"></section>
-		<section id="contacts" class="section__contacts">
+		<section class="section__image section__image_contacts my-4"></section>
+		<section id="contacts" class="section section__contacts">
 			<h2 class="section__heading my-4">Contact me</h2>
 			<form action="post" class="form">
-				<label for="name" class="form_label">Name</label>
-				<input type="text" class="form-input" name="name" id="name" required>
-				<label for="email" class="form_label"></label>
-				<input type="email" class="form-input" name="email" id="email" required>
-				<label for="phone" class="form_label"></label>
-				<input type="phone" class="form-input" name="phone" id="phone" required>
-				<label for="message" class="form_label"></label>
-				<textarea class="form-textarea" id="message"></textarea>
-				<button type="submit" class="form-button">Send</button>
+				<label for="name" class="form_label my-1">Name<span>*</span></label>
+				<input type="text" class="form_input" name="name" id="name" placeholder="Enter Your Name" required>
+				<label for="email" class="form_label my-1">Email<span>*</span></label>
+				<input type="email" class="form_input" name="email" id="email" placeholder="Enter Your Email" required>
+				<label for="phone" class="form_label my-1">Phone</label>
+				<input type="phone" class="form_input" name="phone" id="phone" placeholder="Enter Your Phone" required>
+				<label for="message" class="form_label my-1">Message<span>*</span></label>
+				<textarea class="form_textarea" id="message" placeholder="Enter Your Message Here" rows="5"></textarea>
+				<button type="submit" class="form_button mt-1 ml-auto">Send</button>
 			</form>
 		</section>
 	</main>
