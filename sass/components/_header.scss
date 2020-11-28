@@ -19,17 +19,21 @@
             font-size: 2.2rem;
             font-weight: 700;
             letter-spacing: 1.7rem;
+            animation: nameAnimation 2s ease;
          }
          
          &_row-2 {
             letter-spacing: 1.2rem;
             font-size: 1.4rem;
+            animation: moveToRight 1s ease 2.2s;
+            animation-fill-mode: backwards;
          }
       }
       
       &_nav {
          display: inline-block;
          position: relative;
+         animation: moveUp 1s ease-in 3.5s backwards;
          
        ul {
          display: flex;

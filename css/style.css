@@ -514,14 +514,18 @@ svg {
   font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: 1.7rem;
+  animation: nameAnimation 2s ease;
 }
 .header__text-box_row-2 {
   letter-spacing: 1.2rem;
   font-size: 1.4rem;
+  animation: moveToRight 1s ease 2.2s;
+  animation-fill-mode: backwards;
 }
 .header__text_nav {
   display: inline-block;
   position: relative;
+  animation: moveUp 1s ease-in 3.5s backwards;
 }
 .header__text_nav ul {
   display: flex;
@@ -769,10 +773,49 @@ svg {
   background-size: cover;
 }
 
+@keyframes nameAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-30rem);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  70% {
+    transform: scale(1.8);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes moveToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
