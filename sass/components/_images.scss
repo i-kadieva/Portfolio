@@ -28,11 +28,13 @@
 
 .card__images {
 	position: relative;
+	height: 20rem;
 	
 	.card__image_one {
 		position: absolute;
-		top: 7rem;
-		left: 1.8rem;
+		top: 1rem;
+		left: -8rem;
+		transition: all .6s ease;
 
 		img {
 			@include compositionImage;
@@ -45,8 +47,9 @@
 
 	.card__image_two {
 		position: absolute;
-		top: 11rem;
-		left: 7rem;
+		top: 6rem;
+		left: -5rem;
+		transition: all .6s ease;
 
 		img {
 			@include compositionImage;
@@ -59,8 +62,9 @@
 
 	.card__image_three {
 		position: absolute;
-		top: 14rem;
-		left: 3.5rem;
+		top: 9rem;
+		left: -9rem;
+		transition: all .6s ease;
 
 		img {
 			@include compositionImage;
@@ -73,7 +77,8 @@
 }
 
 .side-back_image {
-	height: 7rem;
+	width: 12rem;
+	height: 8rem;
 }
 
 .card__one_image {
@@ -91,9 +96,4 @@
 .card__three_image {
 	background-image: url('../../images/project_images/multilingoMain.png');
 	background-size: cover;
-}
-
-.side-back_image {
-	width: 12rem;
-	height: 5rem;
 }

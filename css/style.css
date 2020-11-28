@@ -391,18 +391,29 @@ svg {
   background-color: #900019;
 }
 
-.card__link {
+.card__link, .card__link:link, .card__link:visited {
   color: #434343;
+  border-color: transparent;
   border-radius: 6rem;
   padding: 0.5rem 3rem;
   text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
   font-size: 1rem;
+  font-weight: 300;
   background-color: #ffffff;
-  display: inline-block;
-  position: relative;
-  top: 25rem;
-  left: 50%;
-  transform: translateX(-6rem);
+  transition: all 0.6s ease;
+}
+.card__link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+.card__link:active, .card__link:focus {
+  outline: transparent;
+}
+.card__link:active {
+  outline: transparent;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 .form_button {
@@ -638,6 +649,10 @@ svg {
   display: flex;
 }
 .card__side_back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   transform: rotateY(180deg);
 }
 .card__side_back--one {
@@ -681,11 +696,13 @@ svg {
 
 .card__images {
   position: relative;
+  height: 20rem;
 }
 .card__images .card__image_one {
   position: absolute;
-  top: 7rem;
-  left: 1.8rem;
+  top: 1rem;
+  left: -8rem;
+  transition: all 0.6s ease;
 }
 .card__images .card__image_one img {
   margin: 10px;
@@ -699,8 +716,9 @@ svg {
 }
 .card__images .card__image_two {
   position: absolute;
-  top: 11rem;
-  left: 7rem;
+  top: 6rem;
+  left: -5rem;
+  transition: all 0.6s ease;
 }
 .card__images .card__image_two img {
   margin: 10px;
@@ -714,8 +732,9 @@ svg {
 }
 .card__images .card__image_three {
   position: absolute;
-  top: 14rem;
-  left: 3.5rem;
+  top: 9rem;
+  left: -9rem;
+  transition: all 0.6s ease;
 }
 .card__images .card__image_three img {
   margin: 10px;
@@ -729,7 +748,8 @@ svg {
 }
 
 .side-back_image {
-  height: 7rem;
+  width: 12rem;
+  height: 8rem;
 }
 
 .card__one_image {
@@ -747,11 +767,6 @@ svg {
 .card__three_image {
   background-image: url("../../images/project_images/multilingoMain.png");
   background-size: cover;
-}
-
-.side-back_image {
-  width: 12rem;
-  height: 5rem;
 }
 
 * {

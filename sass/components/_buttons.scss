@@ -26,17 +26,36 @@ svg {
 }
 
 .card__link {
-	color: $main-font-color;
-	border-radius: 6rem;
-	padding: .5rem 3rem;
-	text-transform: uppercase;
-	font-size: 1rem;
-	background-color: $white-color;
-	display: inline-block;
-	position: relative;
-	top: 25rem;
-	left: 50%;
-	transform: translateX(-6rem);
+	&,
+	&:link,
+	&:visited {
+		color: $main-font-color;
+		border-color: transparent;
+		border-radius: 6rem;
+		padding: .5rem 3rem;
+		text-transform: uppercase;
+		font-family: 'Dosis', sans-serif;
+		font-size: 1rem;
+		font-weight: 300;
+		background-color: $white-color;
+		transition: all .6s ease;
+	}
+	
+		&:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 1rem 2rem rgba($black-color, .5);
+		}
+
+	&:active,
+	&:focus {
+		outline: transparent;
+	}
+
+	&:active {
+		outline: transparent;
+		transform: translateY(-1px);
+		box-shadow: 0 .5rem 1rem rgba($black-color, .5);
+	}
 }
 
 .form_button {
