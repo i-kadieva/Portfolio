@@ -4,10 +4,11 @@
 	flex-direction: column;
 	margin: 0 auto;
 	font-size: 1.3rem;
+	position: relative;
 	
 	&_label {
 		span {
-			color: $tertiary-color;
+			color: $tertiary-color-light;
 			margin-left: .3rem;
 			font-weight: 700;
 		}
@@ -29,6 +30,13 @@
 			@include formText;
 			outline: none;
 		}
+	}
+
+	&_status {
+		font-size: 1.7rem;
+		position: absolute;
+		bottom: -2.5rem;
+		right: 0;
 	}
  
 }

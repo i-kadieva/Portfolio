@@ -437,6 +437,7 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .footer__logo_image {
   height: 3rem;
@@ -454,9 +455,10 @@ svg {
   flex-direction: column;
   margin: 0 auto;
   font-size: 1.3rem;
+  position: relative;
 }
 .form_label span {
-  color: #900019;
+  color: #FF3100;
   margin-left: 0.3rem;
   font-weight: 700;
 }
@@ -489,6 +491,12 @@ svg {
   border: 1px solid #000000;
   border-radius: 0 !important;
   outline: none;
+}
+.form_status {
+  font-size: 1.7rem;
+  position: absolute;
+  bottom: -2.5rem;
+  right: 0;
 }
 
 .header {
@@ -580,6 +588,7 @@ svg {
 
 .section {
   color: #434343;
+  position: relative;
 }
 .section__projects_details {
   display: flex;
@@ -648,7 +657,7 @@ svg {
   background-image: linear-gradient(to right bottom, rgba(250, 183, 100, 0.7), rgba(247, 148, 29, 0.7));
 }
 .card__side_front .card__header .card__heading_three {
-  background-image: linear-gradient(to right bottom, rgba(148, 124, 118, 0.7), rgba(144, 0, 25, 0.7));
+  background-image: linear-gradient(to right bottom, rgba(255, 49, 0, 0.7), rgba(144, 0, 25, 0.7));
 }
 .card__side_front .card__details_list-item {
   font-size: 0.9rem;
@@ -846,6 +855,18 @@ a {
 
 li {
   list-style-type: none;
+}
+
+.trademark {
+  color: #FF3100;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.3rem;
+  font-size: 0.7rem;
+}
+.trademark-footer {
+  top: -2rem;
+  right: 0.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
