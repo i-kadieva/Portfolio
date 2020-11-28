@@ -11,18 +11,19 @@
 	@include fixedBackground;
 
 	&_about {
-		background-image: url('../../images/bgs/section_about.jpg');
-		height: 20rem;
+		@include sectionImage('../../images/bgs/section_about.jpg');
 	}
 
 	&_contacts {
-		background-image: url('../../images/bgs/section_contacts.jpg');
-		height: 20rem;
+		@include sectionImage('../../images/bgs/section_contacts.jpg');
 	}
 }
 
 .card__image {
 	height: 15rem;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
 }
 
 .card__images {

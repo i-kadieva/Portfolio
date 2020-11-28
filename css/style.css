@@ -569,16 +569,34 @@ svg {
 }
 
 .card {
-  width: calc((100% - 20rem) / 3);
+  perspective: 100rem;
+  -moz-perspective: 100rem;
+  position: relative;
+  height: 35rem;
+  width: calc((100% - 16rem) / 3);
+  background-color: #f7f7f7;
+}
+.card:hover .card__side_front {
+  transform: rotateY(180deg);
+}
+.card:hover .card__side_back {
+  transform: rotateY(0);
+}
+.card__side {
+  height: 35rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   border-radius: 5px;
-  background-color: #ffffff;
-  box-shadow: 0.5rem 0.9rem 1rem rgba(0, 0, 0, 0.5);
+  backface-visibility: hidden;
+  box-shadow: 0.5rem 0.9rem 4rem rgba(0, 0, 0, 0.25);
+  transition: all 1s ease;
 }
 .card__side_front {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 35rem;
+  background-color: #ffffff;
 }
 .card__side_front .card__header {
   position: relative;
@@ -598,24 +616,29 @@ svg {
   background-image: linear-gradient(to right bottom, rgba(17, 139, 148, 0.7), rgba(0, 42, 56, 0.7));
 }
 .card__side_front .card__header .card__heading_two {
-  background-image: linear-gradient(to right bottom, rgba(250, 183, 100, 0.7), rgba(221, 84, 38, 0.7));
+  background-image: linear-gradient(to right bottom, rgba(250, 183, 100, 0.7), rgba(247, 148, 29, 0.7));
 }
 .card__side_front .card__header .card__heading_three {
-  background-image: linear-gradient(to right bottom, rgba(255, 133, 102, 0.7), rgba(144, 0, 25, 0.7));
+  background-image: linear-gradient(to right bottom, rgba(148, 124, 118, 0.7), rgba(144, 0, 25, 0.7));
 }
 .card__side_front .card__details_list-item {
   font-size: 0.9rem;
   line-height: 1.4rem;
 }
-.card__side_front .card__technologies .card__technologies_heading {
+.card__side_front .card__technologies {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+}
+.card__side_front .card__technologies_heading {
   font-size: 1rem;
   text-transform: uppercase;
 }
-.card__side_front .card__technologies .card__technologies_list {
+.card__side_front .card__technologies_list {
   display: flex;
 }
 .card__side_back {
-  height: 35rem;
+  transform: rotateY(180deg);
 }
 .card__side_back--one {
   background-image: linear-gradient(to right bottom, #118b94, #002a38);
@@ -642,16 +665,18 @@ svg {
   background-attachment: fixed;
 }
 .section__image_about {
-  background-image: url("../../images/bgs/section_about.jpg");
-  height: 20rem;
+  background-image: url(../../images/bgs/section_about.jpg);
+  height: 28rem;
 }
 .section__image_contacts {
-  background-image: url("../../images/bgs/section_contacts.jpg");
-  height: 20rem;
+  background-image: url(../../images/bgs/section_contacts.jpg);
+  height: 28rem;
 }
 
 .card__image {
   height: 15rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .card__images {
@@ -664,12 +689,12 @@ svg {
 }
 .card__images .card__image_one img {
   margin: 10px;
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .card__images .card__image_one:hover {
   outline: 4px solid #ffffff;
   transform: scale(1.4) translateY(-0.5rem);
-  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 99;
 }
 .card__images .card__image_two {
@@ -679,12 +704,12 @@ svg {
 }
 .card__images .card__image_two img {
   margin: 10px;
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .card__images .card__image_two:hover {
   outline: 4px solid #ffffff;
   transform: scale(1.4) translateY(-0.5rem);
-  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 99;
 }
 .card__images .card__image_three {
@@ -694,12 +719,12 @@ svg {
 }
 .card__images .card__image_three img {
   margin: 10px;
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .card__images .card__image_three:hover {
   outline: 4px solid #ffffff;
   transform: scale(1.4) translateY(-0.5rem);
-  box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 99;
 }
 

@@ -1,18 +1,12 @@
-@mixin spaceBetweenColumn {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
 @mixin compositionImage {
 	margin: 10px;
-	box-shadow:  1rem 1rem 1rem rgba($black-color, .5);
+	box-shadow:  0 1.5rem 4rem rgba($black-color, .15);
 }
 
 @mixin compositionImageHover {
 	outline: 4px solid $white-color;
 	transform: scale(1.40) translateY(-.5rem);
-	box-shadow: 2rem 2rem 3rem rgba($black-color, .5);
+	box-shadow: 2rem 2rem 4rem rgba($black-color, .5);
 	z-index: 99;
 }
 
@@ -28,4 +22,9 @@
    height: 90vh;
 	background-size: cover;
    background-attachment: fixed;
+}
+
+@mixin sectionImage($urlAddress) {
+	background-image: url(#{$urlAddress});
+		height: 28rem;
 }
