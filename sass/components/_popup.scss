@@ -1,0 +1,50 @@
+.popup {
+	height: 100vh;
+	width: 100%;
+	background-color: rgba($black-color, .7);
+	position: fixed;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	z-index: -1;
+
+	&__container {
+		width: 80%;
+		height: 70vh;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: $background-color;
+
+		&_cancel {
+			position: absolute;
+			top: .3rem;
+			right: 1rem;
+			font-size: 4rem;
+			color: $main-font-color;
+
+			&:hover {
+				color: $secondary-color;
+				cursor: pointer;
+			}
+		}
+
+		&_content {
+			height: 80%;
+			.card__images {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50% , -50%);
+				width: 100%;
+	
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+
+	}
+}

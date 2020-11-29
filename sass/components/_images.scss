@@ -26,11 +26,11 @@
 
 }
 
-.card__images {
+.card__images_container {
 	position: relative;
 	height: 20rem;
 	
-	.card__image_one {
+	.card__images_one {
 		position: absolute;
 		top: 1rem;
 		left: -8rem;
@@ -45,7 +45,7 @@
 		}
 	}
 
-	.card__image_two {
+	.card__images_two {
 		position: absolute;
 		top: 6rem;
 		left: -5rem;
@@ -60,7 +60,7 @@
 		}
 	}
 
-	.card__image_three {
+	.card__images_three {
 		position: absolute;
 		top: 9rem;
 		left: -9rem;
