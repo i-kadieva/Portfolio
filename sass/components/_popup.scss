@@ -7,10 +7,11 @@
 	top: 0;
 	opacity: 0;
 	z-index: -1;
+	transition: all .6s;
 
 	&__container {
 		width: 80%;
-		height: 70vh;
+		height: 85vh;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -21,8 +22,14 @@
 			position: absolute;
 			top: .3rem;
 			right: 1rem;
-			font-size: 4rem;
 			color: $main-font-color;
+			background-color: $background-color;
+			z-index: 9;
+			font-size: 3rem;
+			text-decoration: none;
+			display: inline-block;
+			transition: all .2s;
+			line-height: 1;
 
 			&:hover {
 				color: $secondary-color;

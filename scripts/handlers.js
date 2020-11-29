@@ -1,6 +1,6 @@
 import { sendEmail } from './requests.js';
 import { requestAccessFormRender } from './views.js';
-import { onRequestAccessSubmit } from './events.js';
+import { onRequestAccessSubmit, onClosePopup } from './events.js';
 
 const success = () => {
 	form.reset();
@@ -29,13 +29,23 @@ const formSubmitHandler = (event, form) => {
 	}
 }
 
+const closePopupHandler = event => {
+	const popupContainer = document.getElementById('popup__content');
+	popupContainer.removeChild(popupContainer.firstElementChild);
+	const popup = document.getElementById('popup');
+	popup.style.opacity = '0';
+	popup.style.zIndex = '-1';
+}
+
 const imageSelectHandler = event => {
-	console.log(event);
 	const popup = document.getElementById('popup');
 	popup.style.opacity = '1';
 	popup.style.zIndex = '9999';
 	const popupContainer = document.getElementById('popup__content');
-	popupContainer.appendChild(event);
+	const image = event.cloneNode(true);
+	popupContainer.appendChild(image);
+	const cancelButton = document.getElementById('cancel');
+	onClosePopup(cancelButton, closePopupHandler);
 	
 }
 
@@ -73,5 +83,6 @@ const onRequestAccessHandler = (event) => {
 export {
 	formSubmitHandler,
 	imageSelectHandler,
+	closePopupHandler,
 	onRequestAccessHandler
 };
