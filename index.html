@@ -105,12 +105,12 @@
 						</div>
 					</div>
 					<div class="card__side card__side_back card__side_back--one">
-						<div class="card__images">
-							<div class="card__image_one"><img class="side-back_image" src="./images/project_images/giphyFirst.gif" /></div>
-							<div class="card__image_two"><img class="side-back_image" src="./images/project_images/giphySecond.png" /></div>
-							<div class="card__image_three"><img class="side-back_image" src="./images/project_images/giphyThird.gif" /></div>
+						<div class="card__images_container">
+							<div class="card__images card__images_one"><img class="side-back_image" src="./images/project_images/giphyFirst.gif" /></div>
+							<div class="card__images card__images_two"><img class="side-back_image" src="./images/project_images/giphySecond.png" /></div>
+							<div class="card__images card__images_three"><img class="side-back_image" src="./images/project_images/giphyThird.gif" /></div>
 						</div>
-						<button class="card__link">Ask for access</button>
+						<button class="card__link request-access" id="card__link_one">Ask for access</button>
 					</div>
 				</div>
 				<div class="card mx-3">
@@ -136,12 +136,12 @@
 						</div>
 					</div>
 					<div class="card__side card__side_back card__side_back--two">
-						<div class="card__images">
-							<div class="card__image_one"><img class="side-back_image" src="./images/project_images/libraryFirst1.jpg" /></div>
-							<div class="card__image_two"><img class="side-back_image" src="./images/project_images/librarySecond.jpg" /></div>
-							<div class="card__image_three"><img class="side-back_image" src="./images/project_images/libraryThird.jpg" /></div>
+						<div class="card__images_container">
+							<div class="card__images card__images_one"><img class="side-back_image" src="./images/project_images/libraryFirst1.jpg" /></div>
+							<div class="card__images card__images_two"><img class="side-back_image" src="./images/project_images/librarySecond.jpg" /></div>
+							<div class="card__images card__images_three"><img class="side-back_image" src="./images/project_images/libraryThird.jpg" /></div>
 						</div>
-						<button class="card__link">Ask for access</button>
+						<button class="card__link request-access" id="card__link_two">Ask for access</button>
 					</div>
 				</div>
 				<div class="card">
@@ -171,10 +171,10 @@
 							</div>
 					</div>
 					<div class="card__side card__side_back card__side_back--three">
-						<div class="card__images">
-							<div class="card__image_one"><img class="side-back_image" src="./images/project_images/multilingoFirst.png" /></div>
-							<div class="card__image_two"><img class="side-back_image" src="./images/project_images/multilingoSecond.png" /></div>
-							<div class="card__image_three"><img class="side-back_image" src="./images/project_images/multilingoThird.png" /></div>
+						<div class="card__images_container">
+							<div class="card__images card__images_one"><img class="side-back_image" src="./images/project_images/multilingoFirst.png" /></div>
+							<div class="card__images card__images_two"><img class="side-back_image" src="./images/project_images/multilingoSecond.png" /></div>
+							<div class="card__images card__images_three"><img class="side-back_image" src="./images/project_images/multilingoThird.png" /></div>
 						</div>
 						<a href="https://gitlab.com/dashboard/projects" class="card__link" target="_blanc">Go to project</a>
 					</div>
@@ -226,7 +226,13 @@
 					</li>
 				</ul>
 	</footer>
-	<script type="text/javascript" src="./index.js"></script>
+	<div class="popup" id="popup">
+		<div class="popup__container">
+			<div class="popup__container_cancel">&times</div>
+			<div class="popup__container_content" id="popup__content"></div>
+		</div>
+	</div>
+	<script  type="module" src="./scripts/index.js"></script>
 </body>
 
 </html>
