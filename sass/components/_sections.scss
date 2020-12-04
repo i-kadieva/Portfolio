@@ -1,9 +1,9 @@
 .section {
 	color: $main-font-color;
 	position: relative;
-	
+
 	&__projects {
-		
+
 		&_details {
 			display: flex;
 			justify-content: center;
@@ -14,10 +14,11 @@
 		font-size: 1.5rem;
 		line-height: 2rem;
 	}
-	
+
 	&__heading {
-		font-size: 2rem;
+		font-size: 2.3rem;
 		font-weight: 700;
+		color: $main-font-color;
 		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: 1.2rem;

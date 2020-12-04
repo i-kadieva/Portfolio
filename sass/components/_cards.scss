@@ -2,20 +2,20 @@
 	perspective: 100rem;
 	-moz-perspective: 100rem;
 	position: relative;
-	height: 35rem;
+	height: 40rem;
 	width: $cardWidth;
 	background-color: $background-color;
-	
+
 	&:hover &__side_front {
 		transform: rotateY(180deg);
 	}
-	
+
 	&:hover &__side_back {
 		transform: rotateY(0);
 	}
-	
+
 	&__side {
-		height: 35rem;
+		height: 40rem;
 		width: 100%;
 		position: absolute;
 		top: 0;
@@ -24,7 +24,8 @@
 		backface-visibility: hidden;
 		box-shadow: .5rem .9rem 4rem rgba($black-color, .25);
 		transition: all 1s ease;
-		
+		overflow: hidden;
+
 		&_front {
 			display: flex;
 			flex-direction: column;
@@ -32,40 +33,45 @@
 
 			.card__header {
 				position: relative;
-				
+
 				.card__heading {
-					font-size: 1rem;
-					font-weight: 600;
+					font-size: 1.3rem;
+					font-weight: 400;
 					text-transform: uppercase;
 					letter-spacing: .8rem;
 					position: absolute;
-					bottom: .8rem;
-					right: .8rem;
+					bottom: 1rem;
+					right: 1rem;
 					color: $secondary-font-color;
 					padding: .2rem .6rem;
-					
+
 					&_one {
-						background-image: linear-gradient(to right bottom, rgba($primary-color-light, .7), rgba($primary-color, .7));
+						background-image: linear-gradient(to right bottom, rgba($primary-color-light, .9), rgba($primary-color, .9));
 					}
-	
+
 					&_two {
-						background-image: linear-gradient(to right bottom, rgba($secondary-color-light, .7), rgba($secondary-color, .7));
+						background-image: linear-gradient(to right bottom, rgba($secondary-color-light, .9), rgba($secondary-color, .9));
 					}
-	
+
 					&_three {
-						background-image: linear-gradient(to right bottom, rgba($tertiary-color-light, .7), rgba($tertiary-color, .7));
+						background-image: linear-gradient(to right bottom, rgba($tertiary-color-light, .9), rgba($tertiary-color, .9));
 					}
 				}
-				
+
 			}
-			
+
 			.card__details {
+				display: flex;
+				flex-direction: column;
+				align-items: left;
+				padding: 1.2rem 3rem;
+
 				&_list-item {
-					font-size: .9rem;
-					line-height: 1.4rem;
+					font-size: 1rem;
+					line-height: 1.8rem;
 				}
 			}
-			
+
 			.card__technologies {
 				position: absolute;
 				bottom: 1rem;
@@ -87,15 +93,16 @@
 				align-items: center;
 				justify-content: space-evenly;
 				transform: rotateY(180deg);
-		
+				overflow: visible;
+
 				&--one {
 					background-image: linear-gradient(to right bottom, #118b94, #002a38);
 				}
-		
+
 				&--two {
 					background-image: linear-gradient(to right bottom,#fab764, #DD5426);
 				}
-		
+
 				&--three {
 					background-image: linear-gradient(to right bottom,#ff8566, #900019);
 				}

@@ -26,5 +26,5 @@
 
 @mixin sectionImage($urlAddress) {
 	background-image: url(#{$urlAddress});
-		height: 28rem;
+		height: 35rem;
 }
