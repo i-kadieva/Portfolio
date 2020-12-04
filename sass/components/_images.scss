@@ -20,20 +20,17 @@
 }
 
 .card__image {
-	height: 15rem;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-
+	height: 18rem;
 }
 
 .card__images_container {
 	position: relative;
-	height: 20rem;
-	
+	height: 18rem;
+
 	.card__images_one {
 		position: absolute;
-		top: 1rem;
-		left: -8rem;
+		top: -3rem;
+		left: -12rem;
 		transition: all .6s ease;
 
 		img {
@@ -47,8 +44,8 @@
 
 	.card__images_two {
 		position: absolute;
-		top: 6rem;
-		left: -5rem;
+		top: 2rem;
+		left: -4rem;
 		transition: all .6s ease;
 
 		img {
@@ -62,14 +59,14 @@
 
 	.card__images_three {
 		position: absolute;
-		top: 9rem;
-		left: -9rem;
+		top: 7rem;
+		left: -10rem;
 		transition: all .6s ease;
 
 		img {
 			@include compositionImage;
 		}
-		
+
 		&:hover {
 			@include compositionImageHover();
 		}
@@ -77,19 +74,21 @@
 }
 
 .side-back_image {
-	width: 12rem;
-	height: 8rem;
+	width: 16rem;
+	height: 12rem;
 }
 
 .card__one_image {
 	background-image: url('../../images/project_images/giphyMain.gif');
-	background-size: contain;
+	background-size: cover;
+	background-position-x: center;
 	background-repeat: no-repeat;
 }
 
 .card__two_image {
 	background-image: url('../../images/project_images/libraryMain.jpg');
-	background-size: contain;
+	background-size: cover;
+	background-position-x: center;
 	background-repeat: no-repeat;
 }
 

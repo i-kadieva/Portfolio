@@ -41,7 +41,7 @@ const imageSelectHandler = event => {
 	popupContainer.appendChild(image);
 	const cancelButton = document.getElementById('cancel');
 	onClosePopup(cancelButton, closePopupHandler);
-	
+
 }
 
 const requestAccessSubmitHandler = event => {

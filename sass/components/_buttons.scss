@@ -36,11 +36,11 @@ svg {
 		text-transform: uppercase;
 		font-family: 'Dosis', sans-serif;
 		font-size: 1rem;
-		font-weight: 300;
+		font-weight: 600;
 		background-color: $white-color;
 		transition: all .6s ease;
 	}
-	
+
 		&:hover {
 			transform: translateY(-3px);
 			box-shadow: 0 1rem 2rem rgba($black-color, .5);

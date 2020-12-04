@@ -3,25 +3,26 @@
 	background-image: url('../../images/bgs/heading-banner.jpg');
 	color: $primary-color;
 	position: sticky;
+	height: 92vh;
 
 	&__text {
 		height: 20rem;
 		position: absolute;
 		top: 45%;
-		right: 4rem;
+		right: 15rem;
 		transform: translate(0, -2rem);
 		text-align: left;
-		
+
 		&-box {
 			text-transform: uppercase;
-			
+
 			&_row-1 {
 				font-size: 2.2rem;
 				font-weight: 700;
 				letter-spacing: 1.7rem;
 				animation: nameAnimation 2s ease;
 			}
-			
+
 			&_row-2 {
 				letter-spacing: 1.2rem;
 				font-size: 1.4rem;
@@ -30,30 +31,31 @@
 			}
 		}
 	}
-		
+
 	&__nav {
 		display: inline-block;
 		position: relative;
 		animation: moveUp 1s ease-in 3.5s backwards;
-		
+
 		&_main-navigation {
 			display: flex;
 			font-size: 1.6rem;
 		}
-		
+
 		.header__scroll-btn {
 			display: block;
 			position: absolute;
 			bottom: -6rem;
 			left: 11rem;
-			
+
 			svg {
 				fill: $main-font-color;
 				height: $navigation-items-height;
 				transition: all .6s ease;
-				
+
 				&:hover {
 					transform: scale(1.2);
+					fill: $secondary-color;;
 				}
 			}
 		}
