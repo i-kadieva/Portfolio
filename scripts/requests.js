@@ -1,13 +1,15 @@
-const sendEmail = (method, url, data, success, error) => {
+const sendEmail = (method, url, data, success, error, form, status) => {
 	const xhr = new XMLHttpRequest();
 	 xhr.open(method, url);
 	 xhr.setRequestHeader("Accept", "application/json");
 	 xhr.onreadystatechange = () => {
 		if (xhr.readyState !== XMLHttpRequest.DONE) return;
+		// const form = document.getElementById("email-form");
+		// const status = document.getElementsByClassName("form_status");
 		if (xhr.status === 200) {
-			success(xhr.response, xhr.responseType);
+			success(form, status);
 		} else {
-		  error(xhr.status, xhr.response, xhr.responseType);
+			error(status);
 		}
 	};
 	xhr.send(data);

@@ -52,7 +52,7 @@ import {
 import {
 	formSubmitHandler,
 	imageSelectHandler,
-	onRequestAccessHandler
+	requestAccessHandler
 } from './handlers.js';
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -60,7 +60,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	const images = Array.from(document.getElementsByClassName('card__images'));
 	const projects = Array.from(document.getElementsByClassName('request-access'));
 
-	onFormSubmit(form, () => formSubmitHandler(form));
+	onFormSubmit(form, formSubmitHandler);
 	images.forEach(image => onImageSelect(image, () => imageSelectHandler(image)));
-	projects.forEach(project => onRequestAccess(project, onRequestAccessHandler));
+	projects.forEach(project => onRequestAccess(project, requestAccessHandler));
 });

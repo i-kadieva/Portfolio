@@ -1,5 +1,5 @@
 const requestAccessFormRender = (popupContainer, projectName) => popupContainer.innerHTML = (
-	`<form id="${projectName}-form" action="https://formspree.io/f/mzbkavyl" method="POST" class="form">
+	`<form id="${projectName}-form" method="POST" class="form">
 		<label for="name" class="form_label my-1">Name<span>*</span></label>
 		<input type="text" class="form_input" name="name" id="name" placeholder="Enter Your Name" required>
 		<label for="email" class="form_label my-1">Email<span>*</span></label>

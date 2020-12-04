@@ -1,4 +1,4 @@
-const onFormSubmit = (form, handler) => form.addEventListener("submit", () => handler(form));
+const onFormSubmit = (form, handler) => form.addEventListener("submit", handler);
 
 const onImageSelect = (image, handler) => image.addEventListener("click", handler);
 

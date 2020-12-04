@@ -885,6 +885,10 @@ svg {
   width: 100%;
   height: auto;
 }
+.popup__container .form_status {
+  bottom: 0;
+  font-size: 1.3rem;
+}
 
 * {
   box-sizing: border-box;

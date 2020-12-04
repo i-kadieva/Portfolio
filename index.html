@@ -193,7 +193,7 @@
 		<section id="contacts" class="section__image section__image_contacts my-4"></section>
 		<section class="section section__contacts">
 			<h2 class="section__heading my-4">Contact me</h2>
-			<form id="email-form" action="https://formspree.io/f/mzbkavyl" method="POST" class="form">
+			<form id="email-form" method="POST" class="form">
 				<label for="name" class="form_label my-1">Name<span>*</span></label>
 				<input type="text" class="form_input" name="name" id="name" placeholder="Enter Your Name" required>
 				<label for="email" class="form_label my-1">Email<span>*</span></label>
@@ -203,7 +203,7 @@
 				<label for="message" class="form_label my-1">Message<span>*</span></label>
 				<textarea class="form_textarea" id="message" name="message" placeholder="Enter Your Message Here" rows="5"></textarea>
 				<button type="submit" id="form_button" class="form_button mt-1 ml-auto">Send</button>
-				<div id="form_status" class="form_status"></div>
+				<div id="form_status-email-form" class="form_status"></div>
 			</form>
 		</section>
 	</main>
