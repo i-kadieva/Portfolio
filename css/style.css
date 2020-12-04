@@ -860,8 +860,8 @@ svg {
   transition: all 0.6s;
 }
 .popup__container {
-  width: 80%;
-  height: 85vh;
+  width: 70%;
+  height: 75vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -886,7 +886,7 @@ svg {
   cursor: pointer;
 }
 .popup__container_content {
-  height: 80%;
+  height: auto;
 }
 .popup__container_content .card__images {
   position: absolute;
@@ -898,6 +898,13 @@ svg {
 .popup__container_content .card__images img {
   width: 100%;
   height: auto;
+}
+.popup__container_content form {
+  width: 80%;
+}
+.popup__container_content form .form_status {
+  bottom: 2.8rem;
+  left: 0;
 }
 
 * {

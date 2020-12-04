@@ -46,12 +46,10 @@ const imageSelectHandler = event => {
 	popupContainer.appendChild(image);
 	const cancelButton = document.getElementById('cancel');
 	onClosePopup(cancelButton, closePopupHandler);
-	
+
 }
 
-const onRequestAccessSubmitHandler = (event) => {
-	console.log(event);
-	alert()
+const onRequestAccessSubmitHandler = event => {
 	event.preventDefault();
 	const form = document.getElementById(`${event.target.id}-form`)
 	const data = new FormData(form);
@@ -78,6 +76,8 @@ const onRequestAccessHandler = (event) => {
 	popupContainer.innerHTML = requestAccessFormRender(popupContainer, projectName);
 	const form = document.getElementById(projectName);
 	onRequestAccessSubmit(form, onRequestAccessSubmitHandler);
+	const cancelButton = document.getElementById('cancel');
+	onClosePopup(cancelButton, closePopupHandler);
 }
 
 export {
