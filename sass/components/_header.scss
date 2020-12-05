@@ -21,7 +21,7 @@
 			right: 0;
 		}
 
-		@include respond(phone) {
+		@include respond(tablet-portray) {
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
@@ -29,7 +29,7 @@
 			text-align: center;
 			text-shadow: .1rem .1rem .1rem $white-color,
 				.2rem .2rem .1rem $white-color;
-				font-weight: 700;
+			font-weight: 700;
 		}
 
 		&-box {
@@ -40,6 +40,10 @@
 				font-weight: 700;
 				letter-spacing: 1.7rem;
 				animation: nameAnimation 2s ease-out;
+
+				@include respond(tablet-portray) {
+					font-size: 2.5rem;
+				}
 			}
 
 			&_row-2 {
@@ -47,6 +51,10 @@
 				font-size: 1.4rem;
 				animation: moveToRight 1s ease 2.2s;
 				animation-fill-mode: backwards;
+
+				@include respond(tablet-portray) {
+					font-size: 2rem;
+				}
 			}
 		}
 	}
@@ -62,6 +70,10 @@
 
 			@include respond(phone) {
 				font-size: 2rem;
+			}
+
+			@include respond(tablet-portray) {
+				font-size: 2.5rem;
 			}
 		}
 

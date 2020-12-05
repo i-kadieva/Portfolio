@@ -2,11 +2,22 @@
 	color: $main-font-color;
 	position: relative;
 
+	@include respond(phone) {
+		margin: 0;
+	}
+
 	&__projects {
+		@include respond(tablet-landscape) {
+			margin: 0;
+		}
 
 		&_details {
 			display: flex;
 			justify-content: center;
+
+			@include respond(phone) {
+				display: block;
+			}
 		}
 	}
 

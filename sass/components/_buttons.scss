@@ -39,10 +39,14 @@ svg {
 		padding: .5rem 2rem;
 		text-transform: uppercase;
 		font-family: 'Dosis', sans-serif;
-		font-size: .8rem;
+		font-size: .7rem;
 		font-weight: 600;
 		background-color: $white-color;
 		transition: all .6s ease;
+
+		@include respond(tablet-landscape) {
+			padding: .5rem 1.3rem;
+		}
 	}
 
 		&:hover {

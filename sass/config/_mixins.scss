@@ -2,6 +2,14 @@
 	height: 8rem;
 	margin: 10px;
 	box-shadow:  0 1.5rem 4rem rgba($black-color, .15);
+
+	@include respond(tablet-landscape) {
+		height: 6.7rem;
+	}
+
+	@include respond(phone) {
+		height: 10rem;
+	}
 }
 
 @mixin compositionImageHover {

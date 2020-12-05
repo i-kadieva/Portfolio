@@ -8,6 +8,9 @@
 
 .section__image {
 	@include fixedBackground;
+	@include respond(phone) {
+		height: 40rem;
+	}
 
 	&_about {
 		@include sectionImage('../../images/bgs/section_about.jpg');
@@ -18,65 +21,85 @@
 	}
 }
 
-.card__image_container {
-	position: relative;
-	// left: 50%;
-	// transform: translateX(-50%);
-	width: 100%;
-	height: 27rem;
+.card__background {
+	height: 18rem;
+	background-blend-mode: screen;
+	background-size: cover;
+	background-position: center;
 
-	.card__image {
-		position: absolute;
-		transition: all .6s ease;
+	@include respond(tablet-landscape) {
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 12rem;
 
-		&_one {
-			top: 7rem;
-			left: 5%;
+		@include respond(phone) {
+			height: 24rem;
+		}
+	}
+
+		&-one {
+			background-image: url('../../images/project_images/giphyMain.gif');
+			background-color: $primary-color;
 		}
 
-		&_two {
-			top: 11rem;
-			right: 5%;
+		&-two {
+			background-image: url('../../images/project_images/libraryMain.jpg');
+			background-color: $secondary-color;
 		}
 
-		&_three {
-			top: 14rem;
-			left: 7%;
+		&-three {
+			background-image: url('../../images/project_images/multilingoMain.png');
+			background-color: $tertiary-color;
 		}
+	}
 
-		.side-back_image {
-			@include compositionImage;
+	.card__image_container {
+		position: relative;
+		width: 100%;
+		height: 27rem;
 
-			&:hover {
-				@include compositionImageHover();
+		.card__image {
+			position: absolute;
+			transition: all .6s ease;
+
+			&_one {
+				top: 4rem;
+				left: 55%;
+				transform: translateX(-50%);
+
+				@include respond(phone) {
+					left: 27%;
+				}
+			}
+
+			&_two {
+				top: 8rem;
+				left: 45%;
+				transform: translateX(-50%);
+
+				@include respond(phone) {
+					top: 6rem;
+					z-index: 99;
+				}
+			}
+
+			&_three {
+				top: 13rem;
+				left: 55%;
+				transform: translateX(-50%);
+
+				@include respond(phone) {
+					left: 72%;
+					top: 4rem;
+				}
+			}
+
+			.side-back_image {
+				@include compositionImage;
+
+				&:hover {
+					@include compositionImageHover();
+				}
 			}
 		}
 	}
-}
-
-.card__one_image {
-	height: 18rem;
-	background-image: url('../../images/project_images/giphyMain.gif');
-	background-color: $primary-color;
-	background-blend-mode: screen;
-	background-size: cover;
-	background-position: center;
-}
-
-.card__two_image {
-	height: 18rem;
-	background-image: url('../../images/project_images/libraryMain.jpg');
-	background-size: cover;
-	background-position: center;
-	background-color: $secondary-color;
-	background-blend-mode: screen;
-}
-
-.card__three_image {
-	height: 18rem;
-	background-image: url('../../images/project_images/multilingoMain.png');
-	background-size: cover;
-	background-position: center;
-	background-color: $tertiary-color;
-	background-blend-mode: screen;
-}

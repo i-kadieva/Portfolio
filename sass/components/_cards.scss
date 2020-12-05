@@ -6,8 +6,23 @@
 	width: $cardWidth;
 	background-color: $background-color;
 
+	@include respond(tablet-landscape) {
+		width: $cardWidthTabletLandscape;
+		margin: 0 1rem;
+		height: 70rem;
+	}
+
+	@include respond(phone) {
+		width: 100%;
+		margin: 3rem 0;
+	}
+
 	&:hover &__side_front {
 		transform: rotateY(180deg);
+
+		@include respond(phone) {
+			transform: rotateY(0);
+		}
 	}
 
 	&:hover &__side_back {
@@ -26,8 +41,25 @@
 		transition: all 3s ease;
 		overflow: hidden;
 
+		@include respond(tablet-landscape) {
+			height: 35rem;
+		}
+
+		@include respond(phone) {
+			width: 100%;
+			box-shadow: .5rem .9rem 4rem rgba($black-color, .25);
+			position: static;
+			height: 50rem;
+		}
+
 		&_front {
 			background-color: $white-color;
+			height: 45rem;
+
+			@include respond(phone) {
+				padding: .4rem 0;
+				right: 2rem;
+			}
 
 			.card__header {
 				position: relative;
@@ -43,6 +75,11 @@
 					right: 1rem;
 					width: 70%;
 					color: $secondary-font-color;
+
+					@include respond(phone) {
+						padding: .4rem 0;
+						right: 2rem;
+					}
 
 					&_one {
 						background-image: linear-gradient(to right bottom, rgba($primary-color-light, .9), rgba($primary-color, .9));
@@ -63,13 +100,29 @@
 				&_row {
 					font-size: 1.1rem;
 					line-height: 1.7rem;
+
+					@include respond(tablet-portray) {
+						line-height: 1.5rem;
+					}
+
+					@include respond(phone) {
+						font-size: 1.7rem;
+						line-height: 1.9rem;
+						text-align: center;
+						padding: .5rem;
+					}
 				}
 			}
 
 			.card__technologies {
 				position: absolute;
 				bottom: .8rem;
-				left: 0;
+				left: 1rem;
+
+				@include respond(phone) {
+					bottom: 26rem;
+					left: 0;
+				}
 
 				&_heading {
 					font-size: .8rem;
@@ -85,6 +138,11 @@
 				transform: rotateY(-180deg);
 				overflow: visible;
 
+				@include respond(phone) {
+					height: 30rem;
+					transform: rotateY(0);
+				}
+
 				&--one {
 					background-image: linear-gradient(to right bottom, #118b94, #002a38);
 				}
@@ -95,6 +153,12 @@
 
 				&--three {
 					background-image: linear-gradient(to right bottom,#ff8566, #900019);
+
+				.card__image_container .card__image .side-back_image {
+					@include respond(tablet-landscape) {
+						height: 8rem;
+					}
+				}
 				}
 			}
 	}
