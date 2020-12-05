@@ -1,6 +1,5 @@
 .tech_icon {
-	height: 2rem;
-	width: 2rem;
+	height: 1.8rem;
 }
 
 .footer__media_image {
@@ -19,80 +18,65 @@
 	}
 }
 
-.card__image {
-	height: 18rem;
-}
-
-.card__images_container {
+.card__image_container {
 	position: relative;
-	height: 18rem;
+	// left: 50%;
+	// transform: translateX(-50%);
+	width: 100%;
+	height: 27rem;
 
-	.card__images_one {
+	.card__image {
 		position: absolute;
-		top: -3rem;
-		left: -12rem;
 		transition: all .6s ease;
 
-		img {
-			@include compositionImage;
+		&_one {
+			top: 7rem;
+			left: 5%;
 		}
 
-		&:hover {
-			@include compositionImageHover();
+		&_two {
+			top: 11rem;
+			right: 5%;
+		}
+
+		&_three {
+			top: 14rem;
+			left: 7%;
+		}
+
+		.side-back_image {
+			@include compositionImage;
+
+			&:hover {
+				@include compositionImageHover();
+			}
 		}
 	}
-
-	.card__images_two {
-		position: absolute;
-		top: 2rem;
-		left: -4rem;
-		transition: all .6s ease;
-
-		img {
-			@include compositionImage;
-		}
-
-		&:hover {
-			@include compositionImageHover();
-		}
-	}
-
-	.card__images_three {
-		position: absolute;
-		top: 7rem;
-		left: -10rem;
-		transition: all .6s ease;
-
-		img {
-			@include compositionImage;
-		}
-
-		&:hover {
-			@include compositionImageHover();
-		}
-	}
-}
-
-.side-back_image {
-	width: 16rem;
-	height: 12rem;
 }
 
 .card__one_image {
+	height: 18rem;
 	background-image: url('../../images/project_images/giphyMain.gif');
+	background-color: $primary-color;
+	background-blend-mode: screen;
 	background-size: cover;
-	background-position-x: center;
-	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .card__two_image {
+	height: 18rem;
 	background-image: url('../../images/project_images/libraryMain.jpg');
 	background-size: cover;
-	background-position-x: center;
-	background-repeat: no-repeat;
+	background-position: center;
+	background-color: $secondary-color;
+	background-blend-mode: screen;
 }
 
 .card__three_image {
+	height: 18rem;
 	background-image: url('../../images/project_images/multilingoMain.png');
 	background-size: cover;
+	background-position: center;
+	background-color: $tertiary-color;
+	background-blend-mode: screen;
 }

@@ -29,13 +29,17 @@ svg {
 	&,
 	&:link,
 	&:visited {
+		position: absolute;
+		bottom: 7rem;
+		left: 50%;
+		transform: translateX(-50%);
 		color: $main-font-color;
 		border-color: transparent;
 		border-radius: 6rem;
-		padding: .5rem 3rem;
+		padding: .5rem 2rem;
 		text-transform: uppercase;
 		font-family: 'Dosis', sans-serif;
-		font-size: 1rem;
+		font-size: .8rem;
 		font-weight: 600;
 		background-color: $white-color;
 		transition: all .6s ease;

@@ -23,12 +23,10 @@
 		border-radius: 5px;
 		backface-visibility: hidden;
 		box-shadow: .5rem .9rem 4rem rgba($black-color, .25);
-		transition: all 1s ease;
+		transition: all 3s ease;
 		overflow: hidden;
 
 		&_front {
-			display: flex;
-			flex-direction: column;
 			background-color: $white-color;
 
 			.card__header {
@@ -39,11 +37,12 @@
 					font-weight: 400;
 					text-transform: uppercase;
 					letter-spacing: .8rem;
+					text-align: right;
 					position: absolute;
 					bottom: 1rem;
 					right: 1rem;
+					width: 70%;
 					color: $secondary-font-color;
-					padding: .2rem .6rem;
 
 					&_one {
 						background-image: linear-gradient(to right bottom, rgba($primary-color-light, .9), rgba($primary-color, .9));
@@ -61,24 +60,19 @@
 			}
 
 			.card__details {
-				display: flex;
-				flex-direction: column;
-				align-items: left;
-				padding: 1.2rem 3rem;
-
-				&_list-item {
-					font-size: 1rem;
-					line-height: 1.8rem;
+				&_row {
+					font-size: 1.1rem;
+					line-height: 1.7rem;
 				}
 			}
 
 			.card__technologies {
 				position: absolute;
-				bottom: 1rem;
+				bottom: .8rem;
 				left: 0;
 
 				&_heading {
-					font-size: 1rem;
+					font-size: .8rem;
 					text-transform: uppercase;
 				}
 				&_list {
@@ -88,11 +82,7 @@
 			}
 
 			&_back {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: space-evenly;
-				transform: rotateY(180deg);
+				transform: rotateY(-180deg);
 				overflow: visible;
 
 				&--one {
