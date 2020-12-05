@@ -570,15 +570,10 @@ svg {
   left: 0;
   z-index: 999;
 }
-.navigation__left {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
 .navigation__left .navigation__logo_image {
   height: 8vh;
 }
-.navigation__left .navigation__toggle-device {
+.navigation__right .navigation__toggle-device {
   display: flex;
 }
 

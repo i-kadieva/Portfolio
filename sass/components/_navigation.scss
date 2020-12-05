@@ -9,13 +9,12 @@
 	z-index: 999;
 
 	&__left {
-		display: flex;
-		justify-content: left;
-		align-items: center;
-
 		.navigation__logo_image {
 			height: 8vh;
 		}
+	}
+
+	&__right {
 		.navigation__toggle-device {
 			display: flex;
 		}
