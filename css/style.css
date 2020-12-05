@@ -512,13 +512,34 @@ svg {
   position: sticky;
   height: 92vh;
 }
+@media (max-width: 37.5em) {
+  .header {
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: screen;
+  }
+}
 .header__text {
   height: 20rem;
   position: absolute;
   top: 45%;
-  right: 4rem;
-  transform: translate(0, -2rem);
+  right: 10%;
   text-align: left;
+}
+@media (max-width: 81.3em) {
+  .header__text {
+    right: 0;
+  }
+}
+@media (max-width: 37.5em) {
+  .header__text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.1rem #ffffff, 0.2rem 0.2rem 0.1rem #ffffff;
+    font-weight: 700;
+  }
 }
 .header__text-box {
   text-transform: uppercase;
@@ -544,6 +565,11 @@ svg {
   display: flex;
   font-size: 1.6rem;
 }
+@media (max-width: 37.5em) {
+  .header__nav_main-navigation {
+    font-size: 2rem;
+  }
+}
 .header__nav .header__scroll-btn {
   display: block;
   position: absolute;
@@ -554,6 +580,12 @@ svg {
   fill: #434343;
   height: 4rem;
   transition: all 0.6s ease;
+}
+@media (max-width: 37.5em) {
+  .header__nav .header__scroll-btn svg {
+    height: 6rem;
+    stroke-width: 10rem;
+  }
 }
 .header__nav .header__scroll-btn svg:hover {
   transform: scale(1.2);
@@ -785,7 +817,7 @@ svg {
     transform: translateX(0);
   }
   70% {
-    transform: scale(2);
+    transform: scale(1.7);
   }
   100% {
     opacity: 1;
@@ -878,16 +910,32 @@ svg {
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
 
-body {
+html {
   font-family: "Dosis", sans-serif;
-  font-size: 1.2rem;
+  font-size: 120%;
   line-height: 1.7rem;
+}
+@media (max-width: 81.3em) {
+  html {
+    font-size: 100%;
+    line-height: 1.5rem;
+  }
+}
+@media (max-width: 56.3em) {
+  html {
+    font-size: 70%;
+    line-height: 1rem;
+  }
+}
+
+body {
+  box-sizing: border-box;
   background-color: #f7f7f7;
 }
 

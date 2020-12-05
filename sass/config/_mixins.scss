@@ -1,5 +1,4 @@
 @mixin compositionImage {
-	// width: 70%;
 	height: 8rem;
 	margin: 10px;
 	box-shadow:  0 1.5rem 4rem rgba($black-color, .15);
@@ -20,7 +19,7 @@
 	border-radius: 0 !important;
 }
 
-@mixin fixedBackground{
+@mixin fixedBackground {
    height: 90vh;
 	background-size: cover;
    background-attachment: fixed;
@@ -29,4 +28,19 @@
 @mixin sectionImage($urlAddress) {
 	background-image: url(#{$urlAddress});
 		height: 35rem;
+}
+
+@mixin respond($device) {
+	@if $device == phone {
+		@media (max-width: 37.5em) { @content };	// 600px
+	}
+	@if $device == tablet-portray {
+		@media (max-width: 56.3em) { @content };	// 900px
+	}
+	@if $device == tablet-landscape {
+		@media (max-width: 81.3em) { @content };	//1300px
+	}
+	@if $device == big-screen {
+		 @media (min-width: 112.5) { @content };	//1800px
+	}
 }

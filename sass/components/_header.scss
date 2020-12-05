@@ -5,13 +5,32 @@
 	position: sticky;
 	height: 92vh;
 
+	@include respond(phone) {
+		background-color: rgba($white-color, .3);
+		background-blend-mode: screen;
+	}
+
 	&__text {
 		height: 20rem;
 		position: absolute;
 		top: 45%;
-		right: 4rem;
-		transform: translate(0, -2rem);
+		right: 10%;
 		text-align: left;
+
+		@include respond(tablet-landscape) {
+			right: 0;
+		}
+
+		@include respond(phone) {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			text-align: center;
+			text-shadow: .1rem .1rem .1rem $white-color,
+				.2rem .2rem .1rem $white-color;
+				font-weight: 700;
+		}
 
 		&-box {
 			text-transform: uppercase;
@@ -40,6 +59,10 @@
 		&_main-navigation {
 			display: flex;
 			font-size: 1.6rem;
+
+			@include respond(phone) {
+				font-size: 2rem;
+			}
 		}
 
 		.header__scroll-btn {
@@ -52,6 +75,11 @@
 				fill: $main-font-color;
 				height: $navigation-items-height;
 				transition: all .6s ease;
+
+				@include respond(phone) {
+					height: 6rem;
+					stroke-width: 10rem;
+				}
 
 				&:hover {
 					transform: scale(1.2);
