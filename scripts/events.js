@@ -8,10 +8,16 @@ const onRequestAccess = (project, handler) => project.addEventListener("click", 
 
 const onRequestAccessSubmit = (projectForm, handler) => projectForm.addEventListener("submit", handler);
 
+const onNavigationButtonClick = (item, handler) => item.addEventListener("click", handler);
+
+const onNavigationItemClick = (item, handler) => item.addEventListener("click", handler);
+
 export {
 	onFormSubmit,
 	onImageSelect,
 	onClosePopup,
 	onRequestAccess,
-	onRequestAccessSubmit
+	onRequestAccessSubmit,
+	onNavigationButtonClick,
+	onNavigationItemClick
 };

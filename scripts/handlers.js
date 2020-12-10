@@ -24,7 +24,7 @@ const formSubmitHandler = event => {
 	sendEmail(form.method, URL_ADDRESS, data, success, error, form, status);
 }
 
-const closePopupHandler = event => {
+const closePopupHandler = () => {
 	const popupContainer = document.getElementById('popup__content');
 	popupContainer.removeChild(popupContainer.firstElementChild);
 	const popup = document.getElementById('popup');
@@ -66,9 +66,32 @@ const requestAccessHandler = event => {
 	onClosePopup(cancelButton, closePopupHandler);
 }
 
+const navigationButtonClickHandler = event => {
+	const navigationButton = event.target;
+	const buttonBackground = document.getElementsByClassName('navigation__background')[0];
+	const navigationBar = document.getElementsByClassName('navigation__nav')[0];
+	if (buttonBackground.classList.length === 1) {
+		buttonBackground.classList.add('navigation__background-expanded');
+		navigationBar.classList.add('navigation__nav-expanded');
+	} else {
+		buttonBackground.classList.remove('navigation__background-expanded');
+		navigationBar.classList.remove('navigation__nav-expanded');
+	}
+}
+
+const navigationItemClickHandler = () => {
+	const buttonBackground = document.getElementsByClassName('navigation__background')[0];
+	const navigationBar = document.getElementsByClassName('navigation__nav')[0];
+	const navigationButton = document.getElementById('navigation__button');
+	buttonBackground.classList.remove('navigation__background-expanded');
+	navigationBar.classList.remove('navigation__nav-expanded');
+}
+
 export {
 	formSubmitHandler,
 	imageSelectHandler,
 	closePopupHandler,
-	requestAccessHandler
+	requestAccessHandler,
+	navigationButtonClickHandler,
+	navigationItemClickHandler
 };

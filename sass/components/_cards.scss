@@ -50,11 +50,12 @@
 			box-shadow: .5rem .9rem 4rem rgba($black-color, .25);
 			position: static;
 			height: 50rem;
+			border-radius: 0;
 		}
 
 		&_front {
 			background-color: $white-color;
-			height: 45rem;
+			height: 40rem;
 
 			@include respond(phone) {
 				padding: .4rem 0;
@@ -137,6 +138,7 @@
 			&_back {
 				transform: rotateY(-180deg);
 				overflow: visible;
+				height: 40rem;
 
 				@include respond(phone) {
 					height: 30rem;

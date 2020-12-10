@@ -17,10 +17,6 @@ svg {
 	color: $secondary-font-color;
 }
 
-.navigation__toggle-device_desktop {
-	border-right: 2px solid $primary-color;
-}
-
 .navigation__toggle-menu label {
 	background-color: $tertiary-color;
 }
@@ -50,7 +46,7 @@ svg {
 	}
 
 		&:hover {
-			transform: translateY(-3px);
+			transform: translate(-50%, -3px);
 			box-shadow: 0 1rem 2rem rgba($black-color, .5);
 		}
 

@@ -1,0 +1,32 @@
+.mobile {
+   opacity: 0;
+   width: 20rem;
+   border: 1rem solid $primary-color;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 3rem;
+   transition: all .6s;
+
+   &-display {
+      opacity: 1;
+      z-index: 999;
+      overflow-y: auto;
+      height: 70vh;
+      // overflow-x: hidden;
+   }
+
+   &-top {
+      height: 3rem;
+      background-color: $primary-color;
+      border-top-left-radius: 20rem;
+      border-top-right-radius: 20rem;
+   }
+
+   &-bottom {
+      height: 2rem;
+      background-color: $primary-color;
+      border-bottom-left-radius: 20rem;
+      border-bottom-right-radius: 20rem;
+   }
+}
