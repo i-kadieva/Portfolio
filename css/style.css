@@ -592,6 +592,11 @@ svg {
   bottom: -6rem;
   left: 11rem;
 }
+@media (max-width: 56.3em) {
+  .header__nav .header__scroll-btn {
+    left: 17rem;
+  }
+}
 .header__nav .header__scroll-btn svg {
   fill: #434343;
   height: 4rem;
@@ -621,6 +626,11 @@ svg {
 .navigation__left .navigation__logo_image {
   height: 8vh;
 }
+@media (max-width: 37.5em) {
+  .navigation__left .navigation__logo_image {
+    height: 6vh;
+  }
+}
 .navigation__background {
   border-radius: 5rem;
   background-image: radial-gradient(#118b94, #002a38);
@@ -632,8 +642,14 @@ svg {
   right: 3.5rem;
   transition: all 0.6s;
 }
+@media (max-width: 81.3em) {
+  .navigation__background {
+    top: 1.5rem;
+    right: 4rem;
+  }
+}
 .navigation__background-expanded {
-  transform: scale(90);
+  transform: scale(100);
 }
 .navigation__nav-expanded {
   width: 100% !important;
@@ -645,11 +661,31 @@ svg {
   right: 3.2rem;
   border-radius: 5rem;
   background-color: #ffffff;
-  height: 3rem;
-  width: 3rem;
+  height: 3.2rem;
+  width: 3.2rem;
   display: inline-block;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   z-index: 1600;
+}
+@media (max-width: 81.3em) {
+  .navigation__button {
+    height: 4.2rem;
+    width: 4.2rem;
+  }
+}
+@media (max-width: 56.3em) {
+  .navigation__button {
+    height: 6rem;
+    width: 6rem;
+    top: 1rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .navigation__button {
+    height: 4rem;
+    width: 4rem;
+    top: 0.3rem;
+  }
 }
 .navigation__nav {
   position: fixed;
@@ -681,8 +717,26 @@ svg {
 }
 .navigation__icon {
   position: absolute;
-  top: 1.5rem;
-  left: 0.7rem;
+  top: 1.6rem;
+  left: 0.8rem;
+}
+@media (max-width: 81.3em) {
+  .navigation__icon {
+    top: 2rem;
+    left: 1.2rem;
+  }
+}
+@media (max-width: 56.3em) {
+  .navigation__icon {
+    top: 2.9rem;
+    left: 1.5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .navigation__icon {
+    top: 1.9rem;
+    left: 0.8rem;
+  }
 }
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   display: inline-block;
@@ -690,16 +744,48 @@ svg {
   height: 2px;
   background-color: #434343;
 }
+@media (max-width: 56.3em) {
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 2.7rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 2.5rem;
+  }
+}
 .navigation__icon::before, .navigation__icon::after {
   content: "";
   position: absolute;
   left: 0;
+  transition: all 0.6s;
 }
 .navigation__icon::before {
   top: -0.5rem;
 }
+@media (max-width: 56.3em) {
+  .navigation__icon::before {
+    top: -0.7rem;
+  }
+}
 .navigation__icon::after {
   top: 0.5rem;
+}
+@media (max-width: 56.3em) {
+  .navigation__icon::after {
+    top: 0.7rem;
+  }
+}
+.navigation__icon-active {
+  background-color: transparent;
+}
+.navigation__icon-active::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.navigation__icon-active::after {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 .nav_item {

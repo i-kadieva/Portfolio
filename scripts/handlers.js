@@ -70,21 +70,25 @@ const navigationButtonClickHandler = event => {
 	const navigationButton = event.target;
 	const buttonBackground = document.getElementsByClassName('navigation__background')[0];
 	const navigationBar = document.getElementsByClassName('navigation__nav')[0];
+	const navigationIkon = document.getElementsByClassName('navigation__icon')[0];
 	if (buttonBackground.classList.length === 1) {
 		buttonBackground.classList.add('navigation__background-expanded');
 		navigationBar.classList.add('navigation__nav-expanded');
+		navigationIkon.classList.add('navigation__icon-active');
 	} else {
 		buttonBackground.classList.remove('navigation__background-expanded');
 		navigationBar.classList.remove('navigation__nav-expanded');
+		navigationIkon.classList.remove('navigation__icon-active');
 	}
 }
 
 const navigationItemClickHandler = () => {
 	const buttonBackground = document.getElementsByClassName('navigation__background')[0];
 	const navigationBar = document.getElementsByClassName('navigation__nav')[0];
-	const navigationButton = document.getElementById('navigation__button');
+	const navigationIkon = document.getElementsByClassName('navigation__icon')[0];
 	buttonBackground.classList.remove('navigation__background-expanded');
 	navigationBar.classList.remove('navigation__nav-expanded');
+	navigationIkon.classList.remove('navigation__icon-active');
 }
 
 export {
