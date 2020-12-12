@@ -3,6 +3,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 100wh;
 	position: sticky;
 	top: 0;
 	left: 0;
@@ -72,7 +73,7 @@
 
 	&__button {
 		position: fixed;
-		top: .5rem;
+		top: .3rem;
 		right: 3.2rem;
 		border-radius: 5rem;
 		background-color: $white-color;
@@ -83,14 +84,15 @@
 		z-index: 1600;
 
 		@include respond(tablet-landscape) {
-			height: 4.2rem;
-			width: 4.2rem;
+			height: 3.5rem;
+			width: 3.5rem;
+			top: .6rem;
 		}
 
 		@include respond(tablet-portray) {
-			height: 6rem;
-			width: 6rem;
-			top: 1rem;
+			height: 5rem;
+			width: 5rem;
+			top: .8rem;
 		}
 
 		@include respond(phone) {
@@ -138,13 +140,13 @@
 		left: .8rem;
 
 		@include respond(tablet-landscape) {
-			top: 2rem;
-			left: 1.2rem;
+			top: 1.8rem;
+			left: .9rem;
 		}
 
 		@include respond(tablet-portray) {
-			top: 2.9rem;
-			left: 1.5rem;
+			top: 2.5rem;
+			left: 1.2rem;
 		}
 
 		@include respond(phone) {

@@ -78,7 +78,8 @@
 				transform: translateX(-50%);
 
 				@include respond(phone) {
-					top: 6rem;
+					top: 4rem;
+					left: 50%;
 					z-index: 99;
 				}
 			}
