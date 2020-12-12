@@ -20,6 +20,7 @@
 
 		@include respond(tablet-landscape) {
 			width: 95%;
+			height: auto;
 		}
 
 		&_cancel {

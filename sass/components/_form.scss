@@ -5,7 +5,7 @@
 	margin: 0 auto;
 	font-size: 1.3rem;
 	position: relative;
-	
+
 	&_label {
 		span {
 			color: $tertiary-color-light;
@@ -13,7 +13,7 @@
 			font-weight: 700;
 		}
 	}
- 
+
 	&_input {
 		@include formText;
 
@@ -25,7 +25,7 @@
 
 	&_textarea {
 		@include formText;
-		
+
 		&:focus {
 			@include formText;
 			outline: none;
@@ -35,8 +35,12 @@
 	&_status {
 		font-size: 1.7rem;
 		position: absolute;
-		bottom: -2.5rem;
-		right: 0;
+		bottom: 5.5rem;
+		left: 0;
+
+		@include respond(phone) {
+			font-size: 1rem;
+		}
 	}
- 
+
 }

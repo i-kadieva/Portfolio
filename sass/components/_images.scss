@@ -96,6 +96,7 @@
 
 			.side-back_image {
 				@include compositionImage;
+				transition: all .6s;
 
 				&:hover {
 					@include compositionImageHover();

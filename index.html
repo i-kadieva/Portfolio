@@ -7,7 +7,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" type="image/png" href="images/portfolio.png">
 
@@ -15,199 +16,224 @@
 </head>
 
 <body>
-		<div class="navigation">
-			<div class="navigation__left">
-				<div class="navigation__logo mx-3"><img src="./images/MonogramBlue.png" class="navigation__logo_image" /></div>
+	<div class="navigation">
+		<div class="navigation__left">
+			<div class="navigation__logo mx-3"><img src="./images/MonogramBlue.png" class="navigation__logo_image" /></div>
+		</div>
+		<div class="navigation__right mr-3">
+			<div id="navigation__button" class="navigation__button"><span class="navigation__icon">&nbsp</span></div>
+			<div class="navigation__background">&nbsp</div>
+			<ul class="navigation__nav">
+				<li class="navigation__link"><a class="navigation__item" href="#projects">My projects</a></li>
+				<li class="navigation__link"><a class="navigation__item" href="#about">About</a></li>
+				<li class="navigation__link"><a class="navigation__item" href="#contacts">Contact me</a></li>
+			</ul>
+		</div>
+	</div>
+	<header class="header mb-5">
+		<div class="header__text">
+			<div class="header__text-box mb-5">
+				<div class="header__text-box_row-1 mb-2">Irena Kadieva</div>
+				<div class="header__text-box_row-2">Front-end developer</div>
 			</div>
-			<div class="navigation__right mr-3">
-				<div id="navigation__button" class="navigation__button"><span class="navigation__icon">&nbsp</span></div>
-				<div class="navigation__background">&nbsp</div>
-				<ul class="navigation__nav">
-					<li class="navigation__link"><a class="navigation__item" href="#projects">My projects</a></li>
-					<li class="navigation__link"><a class="navigation__item" href="#about">About</a></li>
-					<li class="navigation__link"><a class="navigation__item" href="#contacts">Contact me</a></li>
+			<nav class="header__nav">
+				<ul class="header__nav_main-navigation mb-1">
+					<li class="nav_item nav_item-header mr-2"><a href="#projects">My projects</a></li>
+					<li class="nav_item nav_item-header mr-2"><a href="#about">About</a></li>
+					<li class="nav_item nav_item-header"><a href="#contacts">Contact me</a></li>
 				</ul>
-			</div>
-			</div>
-			<header class="header mb-5">
-				<div class="header__text">
-					<div class="header__text-box mb-5">
-						<div class="header__text-box_row-1 mb-2">Irena Kadieva</div>
-						<div class="header__text-box_row-2">Front-end developer</div>
-					</div>
-					<nav class="header__nav">
-						<ul class="header__nav_main-navigation mb-1">
-						<li class="nav_item nav_item-header mr-2"><a href="#projects">My projects</a></li>
-						<li class="nav_item nav_item-header mr-2"><a href="#about">About</a></li>
-						<li class="nav_item nav_item-header"><a href="#contacts">Contact me</a></li>
-					</ul>
-					<a href="#projects" class="header__scroll-btn">
-						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				<a href="#projects" class="header__scroll-btn">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 						viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 						<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
 						<g>
 							<path
-							d="M500,763.8c-9.6,0-19.3-3.7-26.7-11L21,300.5c-14.7-14.7-14.7-38.6,0-53.3c14.7-14.7,38.6-14.7,53.3,0L500,672.8l425.6-425.6c14.7-14.7,38.6-14.7,53.3,0s14.7,38.6,0,53.3L526.6,752.8C519.3,760.1,509.7,763.8,500,763.8z" />
+								d="M500,763.8c-9.6,0-19.3-3.7-26.7-11L21,300.5c-14.7-14.7-14.7-38.6,0-53.3c14.7-14.7,38.6-14.7,53.3,0L500,672.8l425.6-425.6c14.7-14.7,38.6-14.7,53.3,0s14.7,38.6,0,53.3L526.6,752.8C519.3,760.1,509.7,763.8,500,763.8z" />
 						</g>
-						</svg>
-					</a>
-				</nav>
-			</div>
-			<span class="trademark">* business PNG Designed By HepiHepi from <a href="https://pngtree.com/" target="_blanc">Pngtree.com</a></span>
-		</header>
-		<main class="my-5">
-			<section id="projects" class="section__projects m-5">
-				<h2 class="section__heading mb-5 py-2">My projects</h2>
-				<div class="section__projects_details">
-					<div class="card">
-						<div class="card__side card__side_front">
-							<div class="card__header">
-								<div class="card__background card__background-one"></div>
-								<h4 class="card__heading card__heading_one">Giphy</h4>
-							</div>
-							<div class="card__details mt-1 px-2">
-								<p class="card__details_row">Display top trending gifs.</p>
-								<p class="card__details_row">Upload and search for gifs.</p>
-								<p class="card__details_row">Display gifs' info details.</p>
-								<p class="card__details_row">Make gifs favorite or make a random gif favorite.</p>
-							</div>
-							<div class="card__technologies px-2">
-								<p class="card__technologies_heading mt-2">Used technologies:</p>
-								<ul class="card__technologies_list">
-									<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/html.png" />
-									</li>
-									<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/js.png" /></li>
-									<li class="card__list-item"><img class="tech_icon" src="./images/tech_icons/bootstrap.png" />
-									</li>
-								</ul>
-							</div>
+					</svg>
+				</a>
+			</nav>
+		</div>
+		<span class="trademark">* business PNG Designed By HepiHepi from <a href="https://pngtree.com/"
+				target="_blanc">Pngtree.com</a></span>
+	</header>
+	<main class="my-5">
+		<section id="projects" class="section__projects m-5">
+			<h2 class="section__heading mb-5 py-2">My projects</h2>
+			<div class="section__projects_details">
+				<div class="card">
+					<div class="card__side card__side_front">
+						<div class="card__header">
+							<div class="card__background card__background-one"></div>
+							<h4 class="card__heading card__heading_one">Giphy</h4>
 						</div>
-						<div class="card__side card__side_back card__side_back--one">
-							<div class="card__image_container">
-								<div class="card__image card__image_one"><img class="side-back_image" src="./images/project_images/giphyFirst.gif" /></div>
-								<div class="card__image card__image_two"><img class="side-back_image" src="./images/project_images/giphySecond.png" /></div>
-								<div class="card__image card__image_three"><img class="side-back_image" src="./images/project_images/giphyThird.gif" /></div>
-							</div>
-							<button class="card__link request-access" id="card__link_one">Ask for access</button>
+						<div class="card__details mt-1 px-2">
+							<p class="card__details_row">Display top trending gifs.</p>
+							<p class="card__details_row">Upload and search for gifs.</p>
+							<p class="card__details_row">Display gifs' info details.</p>
+							<p class="card__details_row">Make gifs favorite or make a random gif favorite.</p>
+						</div>
+						<div class="card__technologies px-2">
+							<p class="card__technologies_heading mt-2">Used technologies:</p>
+							<ul class="card__technologies_list">
+								<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/html.png" />
+								</li>
+								<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/js.png" /></li>
+								<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/jquery.png" />
+								<li class="card__list-item"><img class="tech_icon" src="./images/tech_icons/bootstrap.png" />
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="card mx-4">
-						<div class="card__side card__side_front">
-							<div class="card__header">
-								<div class="card__background card__background-two"></div>
-								<h4 class="card__heading card__heading_two">Book library</h4>
-							</div>
-							<div class="card__details mt-1 px-2">
-								<p class="card__details_row">Online book library - borrow books, write reviews, rate.</p>
-								<p class="card__details_row">Administration CRUD operations on all the books, reviews and users.</p>
-								<p class="card__details_row">Ban a user, unlist/borrow/return a book functionality.</p>
-							</div>
-							<div class="card__technologies px-2">
-								<p class="card__technologies_heading mt-2">Used technologies:</p>
-								<ul class="card__technologies_list">
-									<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/ts.png" /></li>
-									<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/angular.png" />
-									</li>
-									<li class="card__list-item"><img class="tech_icon" src="./images/tech_icons/nestjs.png" /></li>
-								</ul>
-							</div>
+					<div class="card__side card__side_back card__side_back--one">
+						<div class="card__image_container">
+							<div class="card__image card__image_one"><img class="side-back_image"
+									src="./images/project_images/giphyFirst.gif" /></div>
+							<div class="card__image card__image_two"><img class="side-back_image"
+									src="./images/project_images/giphySecond.png" /></div>
+							<div class="card__image card__image_three"><img class="side-back_image"
+									src="./images/project_images/giphyThird.gif" /></div>
 						</div>
-						<div class="card__side card__side_back card__side_back--two">
-							<div class="card__image_container">
-								<div class="card__image card__image_one"><img class="side-back_image" src="./images/project_images/libraryFirst1.jpg" /></div>
-								<div class="card__image card__image_two"><img class="side-back_image" src="./images/project_images/librarySecond.jpg" /></div>
-								<div class="card__image card__image_three"><img class="side-back_image" src="./images/project_images/libraryThird.jpg" /></div>
-							</div>
-							<button class="card__link request-access" id="card__link_two">Ask for access</button>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card__side card__side_front">
-							<div class="card__header">
-								<div class="card__background card__background-three"></div>
-								<h4 class="card__heading card__heading_three">Multi lingo</h4>
-							</div>
-							<div class="card__details mt-1 px-2">
-								<p class="card__details_row">Articles, translated in
-									accordance with user’s locale or personal choice.</p>
-								<p class="card__details_row">Type of access: contributors, editors and administrators.</p>
-								<p class="card__details_row">All article’s versions are kept.</p>
-								<p class="card__details_row">Editors correct translations.</p>
-								<p class="card__details_row">Administrators have full access to the system.</li>
-							</div>
-							<div class="card__technologies px-2">
-								<p class="card__technologies_heading mt-1">Used technologies:</p>
-								<ul class="card__technologies_list">
-									<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/ts.png" /></li>
-									<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/angular.png" />
-									</li>
-									<li class="card__list-item"><img class="tech_icon" src="./images/tech_icons/nestjs.png" /></li>
-								</ul>
-							</div>
-						</div>
-						<div class="card__side card__side_back card__side_back--three">
-							<div class="card__image_container">
-								<div class="card__image card__image_one"><img class="side-back_image" src="./images/project_images/multilingoFirst.png" /></div>
-								<div class="card__image card__image_two"><img class="side-back_image" src="./images/project_images/multilingoSecond.png" /></div>
-								<div class="card__image card__image_three"><img class="side-back_image" src="./images/project_images/multilingoThird.png" /></div>
-							</div>
-							<a href="https://gitlab.com/dashboard/projects" class="card__link" target="_blanc">Go to project</a>
-						</div>
+						<button class="card__link request-access" id="card__link_one">Ask for access</button>
 					</div>
 				</div>
-			</section>
-			<section id="about" class="section section__image section__image_about my-4">
-				<span class="trademark">* free background photos from <a href='https://pngtree.com/free-backgrounds' target="_blanc">pngtree.com</a></span>
-			</section>
-			<section class="section section__about my-5 mx-5">
-				<h2 class="section__heading my-5 py-3">About</h2>
-				<p class="section section__about section__about_text mx-5 px-5">
-					I am a passionate and energetic JavaScript developer since 2019. I am proactive, curios and always ready to learn. I have a broad professional experience in various spheres that giving me an opportunity to adapt quickly to new challenges.
-				</p>
-			</section>
-			<section id="contacts" class="section__image section__image_contacts my-4"></section>
-			<section class="section section__contacts my-5">
-				<h2 class="section__heading my-5 py-3">Contact me</h2>
-				<form id="email-form" action="https://formspree.io/f/mzbkavyl" method="POST" class="form pb-5">
-					<label for="name" class="form_label my-1">Name<span>*</span></label>
-					<input type="text" class="form_input" name="name" id="name" placeholder="Enter Your Name" required>
-					<label for="email" class="form_label my-1">Email<span>*</span></label>
-					<input type="email" class="form_input" name="email" id="email" placeholder="Enter Your Email" required>
-					<label for="phone" class="form_label my-1">Phone</label>
-					<input type="phone" class="form_input" name="phone" id="phone" placeholder="Enter Your Phone" required>
-					<label for="message" class="form_label my-1">Message<span>*</span></label>
-					<textarea class="form_textarea" id="message" name="message" placeholder="Enter Your Message Here" rows="5"></textarea>
-					<button type="submit" id="form_button" class="form_button mt-1 ml-auto">Send</button>
-					<div id="form_status-email-form" class="form_status"></div>
-				</form>
-			</section>
-		</main>
-		<footer class="footer px-5">
-			<span class="trademark trademark-footer">* Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" target="_blanc" >Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blanc"> www.flaticon.com</a></span>
-			<div class="footer_logo"><img src="./images/MonogramWhite.png" class="footer__logo_image" /></div>
-			<ul class="footer__navigation">
-				<li class="nav_item nav_item-footer mr-2"><a href="#projects" class="nav_item-link">My projects</a></li>
-				<li class="nav_item nav_item-footer mr-2"><a href="#about" class="nav_item-link">About</a></li>
-				<li class="nav_item nav_item-footer"><a href="#contacts" class="nav_item-link">Contact me</a></li>
-			</ul>
-			<ul class="footer__media">
-				<li class="footer__media_item">
-					<a href="https://www.facebook.com/i.kadieva/" class="footer__media_item-link" target="_blanc"><img src="./images/icons/facebook.png"
-						class="footer__media_image" /></a>
-						<a href="https://www.linkedin.com/in/irena-kadieva-a06923198/" class="footer__media_item-link" target="_blanc"><img src="./images/icons/linkedin.png"
-							class="footer__media_image" /></a>
-						<a href="https://www.instagram.com/i.kadieva/" class="footer__media_item-link" target="_blanc"><img src="./images/icons//instagram.png"
-							class="footer__media_image" /></a>
-						</li>
-					</ul>
-		</footer>
-		<div class="popup" id="popup">
-			<div class="popup__container">
-				<div class="popup__container_cancel" id="cancel">&times</div>
-				<div class="popup__container_content pt-5" id="popup__content"></div>
+				<div class="card mx-4">
+					<div class="card__side card__side_front">
+						<div class="card__header">
+							<div class="card__background card__background-two"></div>
+							<h4 class="card__heading card__heading_two">Book library</h4>
+						</div>
+						<div class="card__details mt-1 px-2">
+							<p class="card__details_row">Online book library - borrow books, write reviews, rate.</p>
+							<p class="card__details_row">Administration CRUD operations on all the books, reviews and users.
+							</p>
+							<p class="card__details_row">Ban a user, unlist/borrow/return a book functionality.</p>
+						</div>
+						<div class="card__technologies px-2">
+							<p class="card__technologies_heading mt-2">Used technologies:</p>
+							<ul class="card__technologies_list">
+								<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/ts.png" /></li>
+								<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/angular.png" />
+								</li>
+								<li class="card__list-item"><img class="tech_icon" src="./images/tech_icons/nestjs.png" /></li>
+							</ul>
+						</div>
+					</div>
+					<div class="card__side card__side_back card__side_back--two">
+						<div class="card__image_container">
+							<div class="card__image card__image_one"><img class="side-back_image"
+									src="./images/project_images/libraryFirst1.jpg" /></div>
+							<div class="card__image card__image_two"><img class="side-back_image"
+									src="./images/project_images/librarySecond.jpg" /></div>
+							<div class="card__image card__image_three"><img class="side-back_image"
+									src="./images/project_images/libraryThird.jpg" /></div>
+						</div>
+						<button class="card__link request-access" id="card__link_two">Ask for access</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__side card__side_front">
+						<div class="card__header">
+							<div class="card__background card__background-three"></div>
+							<h4 class="card__heading card__heading_three">Multi lingo</h4>
+						</div>
+						<div class="card__details mt-1 px-2">
+							<p class="card__details_row">Articles, translated in
+								accordance with user’s locale or personal choice.</p>
+							<p class="card__details_row">Type of access: contributors, editors and administrators.</p>
+							<p class="card__details_row">All article’s versions are kept.</p>
+							<p class="card__details_row">Editors correct translations.</p>
+							<p class="card__details_row">Administrators have full access to the system.</li>
+						</div>
+						<div class="card__technologies px-2">
+							<p class="card__technologies_heading mt-1">Used technologies:</p>
+							<ul class="card__technologies_list">
+								<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/ts.png" /></li>
+								<li class="card__list-item mr-1"><img class="tech_icon" src="./images/tech_icons/angular.png" />
+								</li>
+								<li class="card__list-item"><img class="tech_icon" src="./images/tech_icons/nestjs.png" /></li>
+							</ul>
+						</div>
+					</div>
+					<div class="card__side card__side_back card__side_back--three">
+						<div class="card__image_container">
+							<div class="card__image card__image_one"><img class="side-back_image"
+									src="./images/project_images/multilingoFirst.png" /></div>
+							<div class="card__image card__image_two"><img class="side-back_image"
+									src="./images/project_images/multilingoSecond.png" /></div>
+							<div class="card__image card__image_three"><img class="side-back_image"
+									src="./images/project_images/multilingoThird.png" /></div>
+						</div>
+						<a href="https://gitlab.com/dashboard/projects" class="card__link" target="_blanc">Go to project</a>
+					</div>
+				</div>
 			</div>
+		</section>
+		<section id="about" class="section section__image section__image_about my-4">
+			<span class="trademark">* free background photos from <a href='https://pngtree.com/free-backgrounds'
+					target="_blanc">pngtree.com</a></span>
+		</section>
+		<section class="section section__about my-5 mx-5 px-5">
+			<h2 class="section__heading my-5 py-3">About</h2>
+			<div class="section section__about section__about_text mx-5 px-5">
+				<p>Hi, I am Irena.</p>
+				<p>I am a passionate and energetic JavaScript developer since 2019 when I turned my passion into a career. I
+					am proactive, curios and always ready to learn. I have a broad professional experience in various spheres
+					that giving me an opportunity to adapt quickly to new challenges.
+					I look forward to speaking with you soon about your unique project.</p>
+				<h3 class="section__about_text-heading mt-4"></h3>Development skills</h3>
+				<picture class="section__about_text-image mt-2">
+					<source srcset="./images/tech_icons/tech-mini.png 1x, ./images/tech_icons/technologies.png 2x" media="(max-width: 37.5em)" />
+					<img srcset="./images/tech_icons/tech-mini.png 1x, ./images/tech_icons/technologies.png 2x" alt="skills">
+				</picture>
+			</div>
+		</section>
+		<section id="contacts" class="section__image section__image_contacts my-4"></section>
+		<section class="section section__contacts my-5 px-5">
+			<h2 class="section__heading my-5 py-3">Contact me</h2>
+			<form id="email-form" action="https://formspree.io/f/mzbkavyl" method="POST" class="form pb-5">
+				<label for="name" class="form_label my-1">Name<span>*</span></label>
+				<input type="text" class="form_input" name="name" id="name" placeholder="Enter Your Name" required>
+				<label for="email" class="form_label my-1">Email<span>*</span></label>
+				<input type="email" class="form_input" name="email" id="email" placeholder="Enter Your Email" required>
+				<label for="phone" class="form_label my-1">Phone</label>
+				<input type="phone" class="form_input" name="phone" id="phone" placeholder="Enter Your Phone" required>
+				<label for="message" class="form_label my-1">Message<span>*</span></label>
+				<textarea class="form_textarea" id="message" name="message" placeholder="Enter Your Message Here"
+					rows="5"></textarea>
+				<button type="submit" id="form_button" class="form_button mt-1 ml-auto">Send</button>
+				<div id="form_status-email-form" class="form_status"></div>
+			</form>
+		</section>
+	</main>
+	<footer class="footer px-3">
+		<span class="trademark trademark-footer">* Icons made by <a href="https://www.flaticon.com/authors/freepik"
+				title="Freepik" target="_blanc">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"
+				target="_blanc"> www.flaticon.com</a></span>
+		<div class="footer_logo"><img src="./images/MonogramWhite.png" class="footer__logo_image" /></div>
+		<ul class="footer__navigation">
+			<li class="nav_item nav_item-footer mr-2"><a href="#projects" class="nav_item-link">My projects</a></li>
+			<li class="nav_item nav_item-footer mr-2"><a href="#about" class="nav_item-link">About</a></li>
+			<li class="nav_item nav_item-footer"><a href="#contacts" class="nav_item-link">Contact me</a></li>
+		</ul>
+		<ul class="footer__media">
+			<li class="footer__media_item mr-1"><a href="https://www.linkedin.com/in/irena-kadieva-a06923198/"
+					class="footer__media_item-link" target="_blanc"><img src="./images/icons/linkedin.png"
+						class="footer__media_image" /></a></li>
+			<li class="footer__media_item mr-1"><a href="https://www.facebook.com/i.kadieva/" class="footer__media_item-link"
+					target="_blanc"><img src="./images/icons/facebook.png" class="footer__media_image" /></a></li>
+			<li class="footer__media_item"><a href="https://www.instagram.com/i.kadieva/" class="footer__media_item-link"
+					target="_blanc"><img src="./images/icons//instagram.png" class="footer__media_image" /></a>
+			</li>
+		</ul>
+	</footer>
+	<div class="popup" id="popup">
+		<div class="popup__container">
+			<div class="popup__container_cancel" id="cancel">&times</div>
+			<div class="popup__container_content pt-5" id="popup__content"></div>
 		</div>
-	<script  type="module" src="./scripts/index.js"></script>
+	</div>
+	<script type="module" src="./scripts/index.js"></script>
 </body>
 
 </html>
