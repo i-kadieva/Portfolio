@@ -9,12 +9,13 @@
 	@include respond(tablet-landscape) {
 		width: $cardWidthTabletLandscape;
 		margin: 0 1rem;
-		height: 70rem;
+		height: 45rem;
 	}
 
 	@include respond(phone) {
 		width: 100%;
 		margin: 3rem 0;
+		height: 75rem;
 	}
 
 	&:hover &__side_front {
@@ -55,6 +56,7 @@
 			@include respond(phone) {
 				padding: 0;
 				right: 2rem;
+				height: 43rem;
 			}
 
 			.card__header {
