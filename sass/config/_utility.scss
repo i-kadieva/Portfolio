@@ -1,0 +1,52 @@
+.mx-auto {
+	margin: 0 auto;
+}
+
+.my-auto {
+	margin: auto 0;
+}
+
+.ml-auto {
+	margin-left: auto;
+}
+
+$spaceList: (
+	0: ('l': 'left', 'r': 'right', 't': 'top', 'b': 'bottom'),
+	1: ('l': 'left', 'r': 'right', 't': 'top', 'b': 'bottom'),
+	2: ('l': 'left', 'r': 'right', 't': 'top', 'b': 'bottom'),
+	3: ('l': 'left', 'r': 'right', 't': 'top', 'b': 'bottom'),
+	4: ('l': 'left', 'r': 'right', 't': 'top', 'b': 'bottom'),
+	5: ('l': 'left', 'r': 'right', 't': 'top', 'b': 'bottom')
+);
+
+@each $space, $directions in $spaceList {
+	@each $key, $val in $directions {
+		.m#{$key}-#{$space} {
+			margin-#{$val}: #{$space}rem;
+		}
+		.p#{$key}-#{$space} {
+			padding-#{$val}: #{$space}rem;
+		}
+	}
+			.px-#{$space} {
+				padding-left: #{$space}rem;
+				padding-right: #{$space}rem;
+			}
+			.py-#{$space} {
+				padding: #{$space}rem;
+			}
+			.p-#{$space} {
+				padding: #{$space}rem;
+			}
+			.mx-#{$space} {
+				margin-left: #{$space}rem;
+				margin-right: #{$space}rem;
+			}
+			.my-#{$space} {
+				margin-top: #{$space}rem;
+				margin-bottom: #{$space}rem;
+			}
+			.m-#{$space} {
+				margin: #{$space}rem;
+			}
+}

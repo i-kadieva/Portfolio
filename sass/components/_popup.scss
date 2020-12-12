@@ -1,0 +1,76 @@
+.popup {
+	height: 100vh;
+	width: 100%;
+	background-color: rgba($black-color, .7);
+	position: fixed;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	z-index: -1;
+	transition: all .6s;
+
+	&__container {
+		width: 70%;
+		height: 75vh;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: $background-color;
+
+		@include respond(tablet-landscape) {
+			width: 95%;
+			height: auto;
+		}
+
+		&_cancel {
+			position: absolute;
+			top: .3rem;
+			right: 1rem;
+			color: $main-font-color;
+			background-color: $background-color;
+			z-index: 9;
+			font-size: 3rem;
+			text-decoration: none;
+			display: inline-block;
+			transition: all .2s;
+			line-height: 1;
+
+			&:hover {
+				color: $secondary-color;
+				cursor: pointer;
+			}
+		}
+
+		&_content {
+			height: auto;
+
+			.card__image {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50% , -50%);
+				width: 100%;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			form {
+				width: 80%;
+
+				& .form_status {
+					bottom: 2.8rem;
+					left: 0;
+				}
+			}
+		}
+
+		.form_status {
+			bottom: 0;
+			font-size: 1.3rem;
+		}
+	}
+}

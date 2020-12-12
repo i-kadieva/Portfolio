@@ -1,0 +1,24 @@
+.footer {
+	background-color: #CC4A1E;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	padding-top: .5rem;
+
+	&__logo_image {
+		height: 3rem;
+	}
+
+	&__navigation {
+			display: flex;
+
+			.nav_item-link {
+				color: $secondary-font-color;
+				font-size: 1.2rem;
+			}
+		}
+	&__media {
+		display: flex;
+	}
+}

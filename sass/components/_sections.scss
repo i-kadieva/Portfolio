@@ -1,0 +1,46 @@
+.section {
+	color: $main-font-color;
+	position: relative;
+
+	@include respond(phone) {
+		margin: 0;
+	}
+
+	&__projects {
+		@include respond(tablet-landscape) {
+			margin: 0;
+		}
+
+		&_details {
+			display: flex;
+			justify-content: center;
+
+			@include respond(phone) {
+				display: block;
+			}
+		}
+	}
+
+	&__about_text {
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+
+		&-image {
+			display: block;
+		}
+	}
+
+	&__heading {
+		font-size: 2.3rem;
+		font-weight: 700;
+		color: $main-font-color;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 1.2rem;
+
+		@include respond(phone) {
+			font-size: 1.5rem;
+			line-height: 2rem;
+		}
+	}
+}

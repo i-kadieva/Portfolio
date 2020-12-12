@@ -1,0 +1,51 @@
+* {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+html {
+	font-family: 'Dosis', sans-serif;
+	font-size: 120%;
+	line-height: 1.7rem;
+
+	@include respond(tablet-landscape) {
+		font-size: 100%;
+		line-height: 1.5rem;
+	}
+
+	@include respond(tablet-portray) {
+		font-size: 70%;
+		line-height: 1rem;
+	}
+
+}
+
+body {
+	box-sizing: border-box;
+	background-color: $background-color;
+}
+
+
+a {
+	text-decoration: none;
+	color: $main-font-color;
+}
+
+li {
+	list-style-type: none;
+}
+
+.trademark {
+	color: $tertiary-color-light;
+	position: absolute;
+	bottom: .2rem;
+	right: .3rem;
+	font-size: .7rem;
+
+	&-footer {
+		bottom: 4rem;
+		right: .3rem;
+	}
+}
