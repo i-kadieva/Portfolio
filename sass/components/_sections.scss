@@ -22,22 +22,27 @@
 		}
 	}
 
-	&__about_text {
-		padding: 0 1rem;
-		font-size: 1.5rem;
-		line-height: 2.5rem;
-
-		@include respond(phone) {
-			padding: 0 .5rem;
+	&__about {
+		@include respond(tablet-landscape) {
+			margin: 0 .5rem;
 		}
 
-		&-image {
-			display: block;
+		&_text {
+			padding: 0 1rem;
+			font-size: 1.5rem;
+			line-height: 2.5rem;
 
-			@include respond(phone) {
-					margin-top: 1rem;
-					width: 15rem;
-				}
+			@include respond(tablet-landscape) {
+				padding: 0 .5rem;
+			}
+
+			&-image {
+				display: block;
+
+				@include respond(phone) {
+						margin-top: 1rem;
+					}
+			}
 		}
 	}
 

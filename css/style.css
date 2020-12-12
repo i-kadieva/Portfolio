@@ -721,7 +721,7 @@ svg {
 @media (max-width: 81.3em) {
   .navigation__background {
     top: 1.5rem;
-    right: 4rem;
+    right: 3.5rem;
   }
 }
 @media (max-width: 37.5em) {
@@ -753,7 +753,7 @@ svg {
     height: 3.5rem;
     width: 3.5rem;
     top: 0.6rem;
-    right: 1rem;
+    right: 3rem;
   }
 }
 @media (max-width: 56.3em) {
@@ -768,6 +768,7 @@ svg {
     height: 4rem;
     width: 4rem;
     top: 1rem;
+    right: 1rem;
   }
 }
 .navigation__nav {
@@ -908,12 +909,17 @@ svg {
     display: block;
   }
 }
+@media (max-width: 81.3em) {
+  .section__about {
+    margin: 0 0.5rem;
+  }
+}
 .section__about_text {
   padding: 0 1rem;
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 81.3em) {
   .section__about_text {
     padding: 0 0.5rem;
   }
@@ -924,7 +930,6 @@ svg {
 @media (max-width: 37.5em) {
   .section__about_text-image {
     margin-top: 1rem;
-    width: 15rem;
   }
 }
 .section__heading {
@@ -955,13 +960,14 @@ svg {
   .card {
     width: calc((100% - 6rem) / 3);
     margin: 0 1rem;
-    height: 70rem;
+    height: 45rem;
   }
 }
 @media (max-width: 37.5em) {
   .card {
     width: 100%;
     margin: 3rem 0;
+    height: 75rem;
   }
 }
 .card:hover .card__side_front {
@@ -1003,6 +1009,7 @@ svg {
   .card__side_front {
     padding: 0;
     right: 2rem;
+    height: 43rem;
   }
 }
 .card__side_front .card__header {
@@ -1191,7 +1198,7 @@ svg {
 }
 .card__image_container .card__image_three {
   top: 13rem;
-  left: 55%;
+  left: 56%;
   transform: translateX(-50%);
 }
 @media (max-width: 37.5em) {
@@ -1213,7 +1220,8 @@ svg {
 }
 @media (max-width: 37.5em) {
   .card__image_container .card__image .side-back_image {
-    height: 10rem;
+    width: 15rem;
+    height: auto;
   }
 }
 .card__image_container .card__image .side-back_image:hover {
