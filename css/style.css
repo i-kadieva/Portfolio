@@ -655,6 +655,13 @@ svg {
   left: 0;
   z-index: 999;
 }
+.navigation__left .navigation__logo_link {
+  position: relative;
+  display: inline-block;
+}
+.navigation__left .navigation__logo_link:hover .navigation__logo_tooltip {
+  opacity: 1;
+}
 .navigation__left .navigation__logo_image {
   height: 8vh;
 }
@@ -662,6 +669,20 @@ svg {
   .navigation__left .navigation__logo_image {
     height: 6vh;
   }
+}
+.navigation__left .navigation__logo_tooltip {
+  position: absolute;
+  top: 3.8rem;
+  left: 2.8rem;
+  z-index: 1;
+  opacity: 0;
+  width: 120px;
+  background-color: #002a38;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  transition: opacity 0.6s;
 }
 .navigation__background {
   border-radius: 5rem;
