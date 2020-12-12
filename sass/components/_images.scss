@@ -8,9 +8,6 @@
 
 .section__image {
 	@include fixedBackground;
-	@include respond(phone) {
-		height: 40rem;
-	}
 
 	&_about {
 		@include sectionImage('../../images/bgs/section_about.jpg');
@@ -68,7 +65,7 @@
 				transform: translateX(-50%);
 
 				@include respond(phone) {
-					left: 27%;
+					left: 28%;
 				}
 			}
 
@@ -78,7 +75,7 @@
 				transform: translateX(-50%);
 
 				@include respond(phone) {
-					top: 4rem;
+					top: 8rem;
 					left: 50%;
 					z-index: 99;
 				}
@@ -91,7 +88,7 @@
 
 				@include respond(phone) {
 					left: 72%;
-					top: 4rem;
+					top: 2rem;
 				}
 			}
 

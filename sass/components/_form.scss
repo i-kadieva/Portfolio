@@ -6,6 +6,10 @@
 	font-size: 1.3rem;
 	position: relative;
 
+	@include respond(phone) {
+		width: 90%;
+	}
+
 	&_label {
 		span {
 			color: $tertiary-color-light;
