@@ -9,6 +9,7 @@
 	&__projects {
 		@include respond(tablet-landscape) {
 			margin: 0;
+			background-color: $background-color;
 		}
 
 		&_details {
@@ -22,11 +23,21 @@
 	}
 
 	&__about_text {
+		padding: 0 1rem;
 		font-size: 1.5rem;
 		line-height: 2.5rem;
 
+		@include respond(phone) {
+			padding: 0 .5rem;
+		}
+
 		&-image {
 			display: block;
+
+			@include respond(phone) {
+					margin-top: 1rem;
+					width: 15rem;
+				}
 		}
 	}
 
@@ -41,6 +52,7 @@
 		@include respond(phone) {
 			font-size: 1.5rem;
 			line-height: 2rem;
+			padding: 1rem 0;
 		}
 	}
 }

@@ -35,7 +35,11 @@
 
 @mixin sectionImage($urlAddress) {
 	background-image: url(#{$urlAddress});
-		height: 35rem;
+	height: 35rem;
+
+	@include respond(phone) {
+		height: 20rem;
+	}
 }
 
 @mixin respond($device) {

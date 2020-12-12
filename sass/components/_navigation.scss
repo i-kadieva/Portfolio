@@ -3,11 +3,14 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100wh;
 	position: sticky;
 	top: 0;
 	left: 0;
 	z-index: 999;
+
+	@include respond(phone) {
+		padding: 0 1rem;
+	}
 
 	&__left {
 		.navigation__logo {
@@ -21,34 +24,45 @@
 			}
 
 			&_image {
-			height: 8vh;
+				height: 8vh;
 
-			@include respond(phone) {
-				height: 6vh;
+				@include respond(phone) {
+					height: 6vh;
+				}
+			}
+
+			&_tooltip {
+				position: absolute;
+				top: 3.8rem;
+				left: 2.8rem;
+				z-index: 1;
+				opacity: 0;
+				width: 120px;
+				background-color: $primary-color;
+				color: $white-color;
+				text-align: center;
+				padding: 5px 0;
+				border-radius: 6px;
+				transition: opacity .6s;
 			}
 		}
-
-		&_tooltip {
-			position: absolute;
-			top: 3.8rem;
-			left: 2.8rem;
-			z-index: 1;
-			opacity: 0;
-			width: 120px;
-			background-color: $primary-color;
-			color: $white-color;
-			text-align: center;
-			padding: 5px 0;
-			border-radius: 6px;
-			transition: opacity .6s;
-		}
 	}
+
+	&__right {
+		position: relative;
+		width: 100%;
+		height: 8vh;
+
+		@include respond(phone) {
+			height: 6rem;
+		}
 	}
 
 	&__background {
 		border-radius: 5rem;
 		background-image: radial-gradient($primary-color-light, $primary-color);
 		z-index: 1000;
+		position: fixed;
 		height: 2.5rem;
 		width: 2.5rem;
 		position: fixed;
@@ -59,6 +73,10 @@
 		@include respond(tablet-landscape) {
 			top: 1.5rem;
 			right: 4rem;
+		}
+
+		@include respond(phone) {
+			right: 2rem;
 		}
 	}
 
@@ -74,7 +92,7 @@
 	&__button {
 		position: fixed;
 		top: .3rem;
-		right: 3.2rem;
+		right: 3rem;
 		border-radius: 5rem;
 		background-color: $white-color;
 		height: 3.2rem;
@@ -87,6 +105,7 @@
 			height: 3.5rem;
 			width: 3.5rem;
 			top: .6rem;
+			right: 1rem;
 		}
 
 		@include respond(tablet-portray) {
@@ -98,7 +117,7 @@
 		@include respond(phone) {
 			height: 4rem;
 			width: 4rem;
-			top: .3rem;
+			top: 1rem;
 		}
 	}
 

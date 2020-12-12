@@ -411,6 +411,7 @@ svg {
 @media (max-width: 37.5em) {
   .card__link, .card__link:link, .card__link:visited {
     font-size: 1.2rem;
+    bottom: 5rem;
   }
 }
 .card__link:hover {
@@ -471,6 +472,11 @@ svg {
   margin: 0 auto;
   font-size: 1.3rem;
   position: relative;
+}
+@media (max-width: 37.5em) {
+  .form {
+    width: 90%;
+  }
 }
 .form_label span {
   color: #FF3100;
@@ -575,6 +581,7 @@ svg {
   .header__text-box_row-1 {
     font-size: 2rem;
     line-height: 2.5rem;
+    letter-spacing: 1.4rem;
   }
 }
 .header__text-box_row-2 {
@@ -646,15 +653,19 @@ svg {
 }
 
 .navigation {
-  background-color: #f7f7f7;
+  background-color: #f3f3f3;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100wh;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 999;
+}
+@media (max-width: 37.5em) {
+  .navigation {
+    padding: 0 1rem;
+  }
 }
 .navigation__left .navigation__logo_link {
   position: relative;
@@ -685,10 +696,21 @@ svg {
   border-radius: 6px;
   transition: opacity 0.6s;
 }
+.navigation__right {
+  position: relative;
+  width: 100%;
+  height: 8vh;
+}
+@media (max-width: 37.5em) {
+  .navigation__right {
+    height: 6rem;
+  }
+}
 .navigation__background {
   border-radius: 5rem;
   background-image: radial-gradient(#118b94, #002a38);
   z-index: 1000;
+  position: fixed;
   height: 2.5rem;
   width: 2.5rem;
   position: fixed;
@@ -702,6 +724,11 @@ svg {
     right: 4rem;
   }
 }
+@media (max-width: 37.5em) {
+  .navigation__background {
+    right: 2rem;
+  }
+}
 .navigation__background-expanded {
   transform: scale(100);
 }
@@ -712,7 +739,7 @@ svg {
 .navigation__button {
   position: fixed;
   top: 0.3rem;
-  right: 3.2rem;
+  right: 3rem;
   border-radius: 5rem;
   background-color: #ffffff;
   height: 3.2rem;
@@ -726,6 +753,7 @@ svg {
     height: 3.5rem;
     width: 3.5rem;
     top: 0.6rem;
+    right: 1rem;
   }
 }
 @media (max-width: 56.3em) {
@@ -739,7 +767,7 @@ svg {
   .navigation__button {
     height: 4rem;
     width: 4rem;
-    top: 0.3rem;
+    top: 1rem;
   }
 }
 .navigation__nav {
@@ -868,6 +896,7 @@ svg {
 @media (max-width: 81.3em) {
   .section__projects {
     margin: 0;
+    background-color: #f3f3f3;
   }
 }
 .section__projects_details {
@@ -880,11 +909,23 @@ svg {
   }
 }
 .section__about_text {
+  padding: 0 1rem;
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
+@media (max-width: 37.5em) {
+  .section__about_text {
+    padding: 0 0.5rem;
+  }
+}
 .section__about_text-image {
   display: block;
+}
+@media (max-width: 37.5em) {
+  .section__about_text-image {
+    margin-top: 1rem;
+    width: 15rem;
+  }
 }
 .section__heading {
   font-size: 2.3rem;
@@ -898,6 +939,7 @@ svg {
   .section__heading {
     font-size: 1.5rem;
     line-height: 2rem;
+    padding: 1rem 0;
   }
 }
 
@@ -907,7 +949,7 @@ svg {
   position: relative;
   height: 40rem;
   width: calc((100% - 12rem) / 3);
-  background-color: #f7f7f7;
+  background-color: #f3f3f3;
 }
 @media (max-width: 81.3em) {
   .card {
@@ -1004,10 +1046,10 @@ svg {
 }
 @media (max-width: 37.5em) {
   .card__side_front .card__details_row {
-    font-size: 1.3rem;
-    line-height: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
     text-align: justify;
-    padding: 0.5rem;
+    padding: 0.2rem;
   }
 }
 .card__side_front .card__technologies {
@@ -1066,18 +1108,23 @@ svg {
   background-size: cover;
   background-attachment: fixed;
 }
-@media (max-width: 37.5em) {
-  .section__image {
-    height: 40rem;
-  }
-}
 .section__image_about {
   background-image: url(../../images/bgs/section_about.jpg);
   height: 35rem;
 }
+@media (max-width: 37.5em) {
+  .section__image_about {
+    height: 20rem;
+  }
+}
 .section__image_contacts {
   background-image: url(../../images/bgs/section_contacts.jpg);
   height: 35rem;
+}
+@media (max-width: 37.5em) {
+  .section__image_contacts {
+    height: 20rem;
+  }
 }
 
 .card__background {
@@ -1127,7 +1174,7 @@ svg {
 }
 @media (max-width: 37.5em) {
   .card__image_container .card__image_one {
-    left: 27%;
+    left: 28%;
   }
 }
 .card__image_container .card__image_two {
@@ -1137,7 +1184,7 @@ svg {
 }
 @media (max-width: 37.5em) {
   .card__image_container .card__image_two {
-    top: 4rem;
+    top: 8rem;
     left: 50%;
     z-index: 99;
   }
@@ -1150,7 +1197,7 @@ svg {
 @media (max-width: 37.5em) {
   .card__image_container .card__image_three {
     left: 72%;
-    top: 4rem;
+    top: 2rem;
   }
 }
 .card__image_container .card__image .side-back_image {
@@ -1216,11 +1263,12 @@ svg {
 }
 .popup {
   height: 100vh;
-  width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   left: 0;
   top: 0;
+  right: 0;
+  bottom: 0;
   opacity: 0;
   z-index: -1;
   transition: all 0.6s;
@@ -1232,7 +1280,7 @@ svg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f7f7f7;
+  background-color: #f3f3f3;
 }
 @media (max-width: 81.3em) {
   .popup__container {
@@ -1245,7 +1293,7 @@ svg {
   top: 0.3rem;
   right: 1rem;
   color: #434343;
-  background-color: #f7f7f7;
+  background-color: #f3f3f3;
   z-index: 9;
   font-size: 3rem;
   text-decoration: none;
@@ -1339,7 +1387,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #f7f7f7;
+  background-color: #f3f3f3;
 }
 
 a {
