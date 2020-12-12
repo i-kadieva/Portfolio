@@ -451,11 +451,21 @@ svg {
   position: relative;
   padding-top: 0.5rem;
 }
+@media (max-width: 37.5em) {
+  .footer {
+    padding: 0.5rem;
+  }
+}
 .footer__logo_image {
   height: 3rem;
 }
 .footer__navigation {
   display: flex;
+}
+@media (max-width: 37.5em) {
+  .footer__navigation .nav_item {
+    margin-right: 0.5rem;
+  }
 }
 .footer__navigation .nav_item-link {
   color: #ffffff;

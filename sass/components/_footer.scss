@@ -6,6 +6,10 @@
 	position: relative;
 	padding-top: .5rem;
 
+	@include respond(phone) {
+		padding: .5rem;
+	}
+
 	&__logo_image {
 		height: 3rem;
 	}
@@ -13,9 +17,15 @@
 	&__navigation {
 			display: flex;
 
-			.nav_item-link {
-				color: $secondary-font-color;
-				font-size: 1.2rem;
+			.nav_item {
+				@include respond(phone) {
+					margin-right: .5rem;
+				}
+
+				&-link {
+					color: $secondary-font-color;
+					font-size: 1.2rem;
+				}
 			}
 		}
 	&__media {
