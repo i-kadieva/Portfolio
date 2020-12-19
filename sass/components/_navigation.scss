@@ -19,31 +19,32 @@
 				display: inline-block;
 
 				&:hover .navigation__logo_tooltip {
-					opacity: 1;
+					visibility: visible;
 				}
 			}
-
+			
 			&_image {
 				height: 8vh;
-
+				
 				@include respond(phone) {
 					height: 6vh;
 				}
 			}
-
+			
 			&_tooltip {
 				position: absolute;
-				top: 3.8rem;
+				top: 1.8rem;
 				left: 2.8rem;
 				z-index: 1;
-				opacity: 0;
-				width: 120px;
+				width: 7.5rem;
+				visibility: hidden;
 				background-color: $primary-color;
 				color: $white-color;
+				font-size: .8rem;
+				font-weight: 700;
 				text-align: center;
-				padding: 5px 0;
 				border-radius: 6px;
-				transition: opacity .6s;
+				box-shadow: 10px 2px 1rem rgba($black-color, .2);
 			}
 		}
 	}
@@ -71,8 +72,8 @@
 		transition: all .6s;
 
 		@include respond(tablet-landscape) {
-			top: 1.5rem;
-			right: 3.5rem;
+			top: .7rem;
+			right: 3.4rem;
 		}
 
 		@include respond(phone) {
@@ -102,9 +103,9 @@
 		z-index: 1600;
 
 		@include respond(tablet-landscape) {
-			height: 3.5rem;
-			width: 3.5rem;
-			top: .6rem;
+			height: 3rem;
+			width: 3rem;
+			top: .4rem;
 			right: 3rem;
 		}
 
@@ -160,8 +161,8 @@
 		left: .8rem;
 
 		@include respond(tablet-landscape) {
-			top: 1.8rem;
-			left: .9rem;
+			top: 1.5rem;
+			left: .7rem;
 		}
 
 		@include respond(tablet-portray) {

@@ -16,25 +16,25 @@
 			display: inline-block;
 
 			&:hover .footer__logo_tooltip {
-				opacity: 1;
+				visibility: visible;
 			}
 		}
-
+		
 		&_image {
 			height: 3rem;
-
+			
 			@include respond(phone) {
 				height: 6vh;
 			}
 		}
-
+		
 		&_tooltip {
 			position: absolute;
 			top: -.2rem;
 			left: 2.8rem;
 			z-index: 1;
-			opacity: 0;
-			width: 5rem;
+			width: 7.5rem;
+			visibility: hidden;
 			background-color: $white-color;
 			color: $secondary-color;
 			font-size: .8rem;
@@ -42,7 +42,6 @@
 			text-align: center;
 			border-radius: 6px;
 			box-shadow: 10px 2px 1rem rgba($black-color, .2);
-			transition: opacity .6s;
 		}
 	}
 
