@@ -81,6 +81,7 @@
 
 		@include respond(phone) {
 			right: 2rem;
+			top: 1.2rem;
 		}
 	}
 
@@ -115,7 +116,7 @@
 		@include respond(tablet-portray) {
 			height: 5rem;
 			width: 5rem;
-			top: .8rem;
+			top: 0;
 		}
 
 		@include respond(phone) {
@@ -243,6 +244,10 @@
 	&:hover {
 		transform: rotateZ(15deg) scale(1.3);
 		box-shadow: 0 1rem 2rem rgba($black-color, .5);
+	}
+
+	@include respond(phone) {
+		line-height: 2rem;
 	}
 
 	&-header a:hover {

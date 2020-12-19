@@ -48,5 +48,9 @@ li {
 	&-footer {
 		bottom: 4rem;
 		right: .3rem;
+
+		@include respond(phone) {
+			bottom: 5rem;
+		}
 	}
 }
