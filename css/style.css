@@ -456,8 +456,36 @@ svg {
     padding: 0.5rem;
   }
 }
+.footer__logo_link {
+  position: relative;
+  display: inline-block;
+}
+.footer__logo_link:hover .footer__logo_tooltip {
+  opacity: 1;
+}
 .footer__logo_image {
   height: 3rem;
+}
+@media (max-width: 37.5em) {
+  .footer__logo_image {
+    height: 6vh;
+  }
+}
+.footer__logo_tooltip {
+  position: absolute;
+  top: -0.2rem;
+  left: 2.8rem;
+  z-index: 1;
+  opacity: 0;
+  width: 5rem;
+  background-color: #ffffff;
+  color: #f7941d;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 10px 2px 1rem rgba(0, 0, 0, 0.2);
+  transition: opacity 0.6s;
 }
 .footer__navigation {
   display: flex;
