@@ -37,16 +37,19 @@
 		&-one {
 			background-image: url('../../images/project_images/giphyMain.gif');
 			background-color: $primary-color;
+			background-size: 100% 100%;
 		}
 
 		&-two {
 			background-image: url('../../images/project_images/libraryMain.jpg');
 			background-color: $secondary-color;
+			background-size: 100% 100%;
 		}
 
 		&-three {
 			background-image: url('../../images/project_images/multilingoMain.png');
 			background-color: $tertiary-color;
+			background-size: 100% 100%;
 		}
 	}
 

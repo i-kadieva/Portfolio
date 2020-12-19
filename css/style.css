@@ -1206,14 +1206,17 @@ svg {
 .card__background-one {
   background-image: url("../../images/project_images/giphyMain.gif");
   background-color: #002a38;
+  background-size: 100% 100%;
 }
 .card__background-two {
   background-image: url("../../images/project_images/libraryMain.jpg");
   background-color: #f7941d;
+  background-size: 100% 100%;
 }
 .card__background-three {
   background-image: url("../../images/project_images/multilingoMain.png");
   background-color: #900019;
+  background-size: 100% 100%;
 }
 
 .card__image_container {
