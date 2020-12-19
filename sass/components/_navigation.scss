@@ -20,6 +20,7 @@
 
 				&:hover .navigation__logo_tooltip {
 					visibility: visible;
+					opacity: 1;
 				}
 			}
 			
@@ -38,6 +39,7 @@
 				z-index: 1;
 				width: 7.5rem;
 				visibility: hidden;
+				opacity: 0;
 				background-color: $primary-color;
 				color: $white-color;
 				font-size: .8rem;
@@ -45,6 +47,7 @@
 				text-align: center;
 				border-radius: 6px;
 				box-shadow: 10px 2px 1rem rgba($black-color, .2);
+				transition: visibility 0s linear 0s, opacity .6s;
 			}
 		}
 	}
