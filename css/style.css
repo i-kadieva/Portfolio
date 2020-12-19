@@ -403,7 +403,7 @@ svg {
   background-color: #ffffff;
   transition: all 0.6s ease;
 }
-@media (max-width: 81.3em) {
+@media (max-width: 87.5em) {
   .card__link, .card__link:link, .card__link:visited {
     padding: 0.5rem 1.3rem;
   }
@@ -557,7 +557,7 @@ svg {
   right: 10%;
   text-align: left;
 }
-@media (max-width: 81.3em) {
+@media (max-width: 87.5em) {
   .header__text {
     right: 0;
   }
@@ -728,7 +728,7 @@ svg {
   right: 3.5rem;
   transition: all 0.6s;
 }
-@media (max-width: 81.3em) {
+@media (max-width: 87.5em) {
   .navigation__background {
     top: 1.5rem;
     right: 3.5rem;
@@ -758,7 +758,7 @@ svg {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   z-index: 1600;
 }
-@media (max-width: 81.3em) {
+@media (max-width: 87.5em) {
   .navigation__button {
     height: 3.5rem;
     width: 3.5rem;
@@ -814,7 +814,7 @@ svg {
   top: 1.6rem;
   left: 0.8rem;
 }
-@media (max-width: 81.3em) {
+@media (max-width: 87.5em) {
   .navigation__icon {
     top: 1.8rem;
     left: 0.9rem;
@@ -904,7 +904,7 @@ svg {
     margin: 0;
   }
 }
-@media (max-width: 81.3em) {
+@media (max-width: 87.5em) {
   .section__projects {
     margin: 0;
     background-color: #f3f3f3;
@@ -919,7 +919,7 @@ svg {
     display: block;
   }
 }
-@media (max-width: 81.3em) {
+@media (max-width: 87.5em) {
   .section__about {
     margin: 0 0.5rem;
   }
@@ -929,7 +929,7 @@ svg {
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
-@media (max-width: 81.3em) {
+@media (max-width: 87.5em) {
   .section__about_text {
     padding: 0 0.5rem;
   }
@@ -966,7 +966,7 @@ svg {
   width: calc((100% - 12rem) / 3);
   background-color: #f3f3f3;
 }
-@media (max-width: 81.3em) {
+@media (max-width: 87.5em) {
   .card {
     width: calc((100% - 6rem) / 3);
     margin: 0 1rem;
@@ -1106,7 +1106,7 @@ svg {
 .card__side_back--three {
   background-image: linear-gradient(to right bottom, #ff8566, #900019);
 }
-@media (max-width: 81.3em) {
+@media (max-width: 87.5em) {
   .card__side_back--three .card__image_container .card__image .side-back_image {
     height: 8rem;
   }
@@ -1150,14 +1150,14 @@ svg {
   background-size: cover;
   background-position: center;
 }
-@media (max-width: 81.3em) {
+@media (max-width: 87.5em) {
   .card__background {
     background-size: contain;
     background-repeat: no-repeat;
     height: 12rem;
   }
 }
-@media (max-width: 81.3em) and (max-width: 37.5em) {
+@media (max-width: 87.5em) and (max-width: 37.5em) {
   .card__background {
     height: 24rem;
   }
@@ -1223,7 +1223,7 @@ svg {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: all 0.6s;
 }
-@media (max-width: 81.3em) {
+@media (max-width: 87.5em) {
   .card__image_container .card__image .side-back_image {
     height: 6.7rem;
   }
@@ -1300,7 +1300,7 @@ svg {
   transform: translate(-50%, -50%);
   background-color: #f3f3f3;
 }
-@media (max-width: 81.3em) {
+@media (max-width: 87.5em) {
   .popup__container {
     width: 95%;
     height: auto;
@@ -1390,7 +1390,7 @@ html {
   font-size: 120%;
   line-height: 1.7rem;
 }
-@media (max-width: 81.3em) {
+@media (max-width: 87.5em) {
   html {
     font-size: 100%;
     line-height: 1.5rem;
