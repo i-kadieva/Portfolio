@@ -19,38 +19,33 @@
 }
 
 .card__background {
-	height: 18rem;
+	height: 20rem;
 	background-blend-mode: screen;
-	background-size: cover;
-	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 
 	@include respond(tablet-landscape) {
-		background-size: contain;
-		background-repeat: no-repeat;
-		height: 12rem;
-
-		@include respond(phone) {
-			height: 24rem;
-		}
+		height: 15rem;
 	}
 
-		&-one {
-			background-image: url('../../images/project_images/giphyMain.gif');
-			background-color: $primary-color;
-			background-size: 100% 100%;
-		}
+	@include respond(phone) {
+		height: 24rem;
+	}
 
-		&-two {
-			background-image: url('../../images/project_images/libraryMain.jpg');
-			background-color: $secondary-color;
-			background-size: 100% 100%;
-		}
+	&-one {
+		background-image: url('../../images/project_images/giphyMain.gif');
+		background-color: $primary-color;
+	}
 
-		&-three {
-			background-image: url('../../images/project_images/multilingoMain.png');
-			background-color: $tertiary-color;
-			background-size: 100% 100%;
-		}
+	&-two {
+		background-image: url('../../images/project_images/libraryMain.jpg');
+		background-color: $secondary-color;
+	}
+
+	&-three {
+		background-image: url('../../images/project_images/multilingoMain.png');
+		background-color: $tertiary-color;
+	}
 	}
 
 	.card__image_container {

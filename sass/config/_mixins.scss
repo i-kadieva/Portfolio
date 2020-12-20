@@ -51,7 +51,7 @@
 		@media (max-width: 56.3em) { @content };	// 900px
 	}
 	@if $device == tablet-landscape {
-		@media (max-width: 87.5em) { @content };	//1400px
+		@media (max-width: 90em) { @content };	//1400px
 	}
 	@if $device == big-screen {
 		 @media (min-width: 112.5) { @content };	//1800px
