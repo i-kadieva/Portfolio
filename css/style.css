@@ -1129,7 +1129,6 @@ svg {
 }
 .card__side_back {
   transform: rotateY(-180deg);
-  overflow: visible;
   height: 40rem;
 }
 @media (max-width: 37.5em) {
